@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./生医黑客松:/app/生医黑客松
+      - medical_data:/app/medical_index.pkl
+    environment:
+      - DEEPSEEK_API_KEY=${DEEPSEEK_API_KEY}
+    restart: unless-stopped
+
+  frontend:
+    image: nginx:alpine
+    ports:
+      - "3000:80"
+    volumes:
+      - ./frontend/out:/usr/share/nginx/html:ro
+    depends_on:
+      - backend
+
+volumes:
+  medical_data:
