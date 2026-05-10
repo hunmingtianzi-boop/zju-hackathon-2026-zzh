@@ -38,3 +38,4 @@ uploads/
 
 # Windows system artifact
 %SystemDrive%/
+.vercel
