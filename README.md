@@ -5,6 +5,22 @@
 
 ## 快速启动
 
+### Docker 一键启动（推荐）
+
+```bash
+# 设置 API Key
+export DEEPSEEK_API_KEY=sk-your-key
+
+# 一键启动后端 + 前端
+docker compose up -d
+
+# 访问
+# 前端: http://localhost:3000
+# 后端: http://localhost:8000
+```
+
+### 本地启动
+
 ### 1. 安装 Python 依赖
 
 ```bash

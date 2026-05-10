@@ -3,16 +3,40 @@
 import React, { useRef, useEffect, useState, useCallback } from 'react';
 import dynamic from 'next/dynamic';
 import { colorMap } from '@/lib/agentData';
+import { LayoutGrid, Grid3X3, ArrowDownUp } from 'lucide-react';
 
-// Dynamically import to avoid SSR issues with Canvas
 const ForceGraph2D = dynamic(() => import('react-force-graph-2d'), { ssr: false });
 
-export default function GraphCanvas({ data, onNodeClick, onBgClick }: { data: any, onNodeClick: (node: any) => void, onBgClick: () => void }) {
+interface ContextMenu {
+  x: number;
+  y: number;
+  node: any;
+}
+
+function drawHexagon(ctx: CanvasRenderingContext2D, x: number, y: number, r: number) {
+  ctx.beginPath();
+  for (let i = 0; i < 6; i++) {
+    const angle = (Math.PI / 3) * i - Math.PI / 6;
+    const px = x + r * Math.cos(angle);
+    const py = y + r * Math.sin(angle);
+    i === 0 ? ctx.moveTo(px, py) : ctx.lineTo(px, py);
+  }
+  ctx.closePath();
+}
+
+export default function GraphCanvas({ data, onNodeClick, onBgClick, onNodeFeedback, onNodeExpand }: {
+  data: any,
+  onNodeClick: (node: any) => void,
+  onBgClick: () => void,
+  onNodeFeedback?: (node: any) => void,
+  onNodeExpand?: (node: any) => void,
+}) {
   const fgRef = useRef<any>(null);
   const [dimensions, setDimensions] = useState({ width: 800, height: 600 });
+  const [dagMode, setDagMode] = useState<string | null>(null);
+  const [contextMenu, setContextMenu] = useState<ContextMenu | null>(null);
 
   useEffect(() => {
-    // Fit to container
     const updateDimensions = () => {
       setDimensions({
         width: window.innerWidth,
@@ -24,7 +48,14 @@ export default function GraphCanvas({ data, onNodeClick, onBgClick }: { data: an
     return () => window.removeEventListener('resize', updateDimensions);
   }, []);
 
+  useEffect(() => {
+    const close = () => setContextMenu(null);
+    window.addEventListener('click', close);
+    return () => window.removeEventListener('click', close);
+  }, []);
+
   const handleNodeClick = useCallback((node: any) => {
+    setContextMenu(null);
     onNodeClick(node);
     if (fgRef.current) {
       fgRef.current.centerAt(node.x, node.y, 1000);
@@ -32,13 +63,77 @@ export default function GraphCanvas({ data, onNodeClick, onBgClick }: { data: an
     }
   }, [onNodeClick]);
 
+  const handleNodeRightClick = useCallback((node: any, event: MouseEvent) => {
+    event.preventDefault();
+    setContextMenu({ x: event.clientX, y: event.clientY, node });
+  }, []);
+
   return (
     <div className="absolute inset-0 z-0">
+      {/* Layout switcher */}
+      <div className="absolute top-4 right-4 z-20 flex gap-1 bg-slate-900/80 backdrop-blur rounded-lg border border-slate-700/60 p-1">
+        {([
+          { mode: null, icon: <Grid3X3 size={14} />, label: '力导向' },
+          { mode: 'td', icon: <ArrowDownUp size={14} />, label: '自上而下' },
+          { mode: 'lr', icon: <ArrowDownUp size={14} className="rotate-90" />, label: '左至右' },
+        ] as const).map(({ mode, icon, label }) => (
+          <button
+            key={label}
+            onClick={() => setDagMode(mode)}
+            className={`flex items-center gap-1 px-2 py-1 rounded text-[10px] font-medium transition-colors ${
+              dagMode === mode ? 'bg-rose-500/30 text-rose-300' : 'text-slate-400 hover:text-slate-200'
+            }`}
+            title={label}
+          >
+            {icon} {label}
+          </button>
+        ))}
+      </div>
+
+      {/* Right-click context menu */}
+      {contextMenu && (
+        <div
+          className="absolute z-30 bg-slate-900 border border-slate-700 rounded-lg shadow-2xl py-1 min-w-[140px]"
+          style={{ left: contextMenu.x, top: contextMenu.y }}
+        >
+          <button
+            className="w-full text-left px-3 py-2 text-xs text-slate-300 hover:bg-slate-800 hover:text-white flex items-center gap-2"
+            onClick={() => { onNodeClick(contextMenu.node); setContextMenu(null); }}
+          >
+            查看详情
+          </button>
+          {onNodeFeedback && (
+            <button
+              className="w-full text-left px-3 py-2 text-xs text-slate-300 hover:bg-slate-800 hover:text-white flex items-center gap-2"
+              onClick={() => { onNodeFeedback(contextMenu.node); setContextMenu(null); }}
+            >
+              提供教学反馈
+            </button>
+          )}
+          {onNodeExpand && (
+            <button
+              className="w-full text-left px-3 py-2 text-xs text-slate-300 hover:bg-slate-800 hover:text-white flex items-center gap-2"
+              onClick={() => { onNodeExpand(contextMenu.node); setContextMenu(null); }}
+            >
+              展开邻接节点
+            </button>
+          )}
+          <button
+            className="w-full text-left px-3 py-2 text-xs text-rose-400 hover:bg-rose-500/10 flex items-center gap-2"
+            onClick={() => setContextMenu(null)}
+          >
+            关闭
+          </button>
+        </div>
+      )}
+
       <ForceGraph2D
         ref={fgRef}
         width={dimensions.width}
         height={dimensions.height}
         graphData={data}
+        dagMode={dagMode as any}
+        dagLevelDistance={dagMode ? 80 : undefined}
         nodeLabel={(node: any) => `${node.name}\n${node.books?.join(', ') || ''}`}
         nodeColor={(node: any) => node.type === 'merged' ? colorMap.merged : (colorMap[node.source as keyof typeof colorMap] || '#64748b')}
         nodeRelSize={4}
@@ -47,47 +142,44 @@ export default function GraphCanvas({ data, onNodeClick, onBgClick }: { data: an
         linkDirectionalArrowLength={5}
         linkDirectionalArrowRelPos={1}
         onNodeClick={handleNodeClick}
-        onBackgroundClick={onBgClick}
+        onNodeRightClick={handleNodeRightClick}
+        onBackgroundClick={() => { onBgClick(); setContextMenu(null); }}
         nodeCanvasObject={(node: any, ctx, globalScale) => {
           const rawLabel = String(node.name || '');
           const nodeRadius = Math.max(4, node.val || 4);
-          
-          // Draw Circle
-          ctx.beginPath();
-          ctx.arc(node.x, node.y, nodeRadius, 0, 2 * Math.PI, false);
-          ctx.fillStyle = node.type === 'merged' ? colorMap.merged : (colorMap[node.source as keyof typeof colorMap] || '#64748b');
-          ctx.fill();
-          
-          // Glow effect for merged
-          if(node.type === 'merged') {
+          const fillColor = node.type === 'merged' ? colorMap.merged : (colorMap[node.source as keyof typeof colorMap] || '#64748b');
+
+          if (node.type === 'merged') {
+            // Hexagon for merged nodes
+            drawHexagon(ctx, node.x!, node.y!, nodeRadius);
+            ctx.fillStyle = fillColor;
             ctx.shadowColor = colorMap.merged;
             ctx.shadowBlur = 10;
             ctx.fill();
-            ctx.shadowBlur = 0; // reset
+            ctx.shadowBlur = 0;
+          } else {
+            // Circle for single-source nodes
+            ctx.beginPath();
+            ctx.arc(node.x!, node.y!, nodeRadius, 0, 2 * Math.PI, false);
+            ctx.fillStyle = fillColor;
+            ctx.fill();
           }
 
-          // Draw Text ONLY if zoomed in enough (reduce dense clutter)
           if (globalScale >= 0.8) {
-            // Font size scales with node, but has a readable minimum
             const fontSize = Math.max(4, nodeRadius * 0.6);
             ctx.font = `${fontSize}px Inter, Sans-Serif`;
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
             ctx.fillStyle = '#f8fafc';
-            
-            // Truncate based on zoom level
             const maxLength = globalScale > 2 ? 15 : 8;
             const label = rawLabel.length > maxLength ? rawLabel.substring(0, maxLength) + '...' : rawLabel;
-            
-            // Shadow for text readability
             ctx.shadowColor = '#000';
             ctx.shadowBlur = 4;
-            // Draw text BELOW the node
-            ctx.fillText(label, node.x, node.y + nodeRadius + fontSize);
+            ctx.fillText(label, node.x!, node.y! + nodeRadius + fontSize);
             ctx.shadowBlur = 0;
           }
         }}
-        d3VelocityDecay={0.3} // Make it more fluid
+        d3VelocityDecay={0.3}
       />
     </div>
   );
