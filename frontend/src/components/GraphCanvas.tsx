@@ -136,48 +136,45 @@ export default function GraphCanvas({ data, onNodeClick, onBgClick, onNodeFeedba
         dagLevelDistance={dagMode ? 80 : undefined}
         nodeLabel={(node: any) => `${node.name}\n${node.books?.join(', ') || ''}`}
         nodeColor={(node: any) => node.type === 'merged' ? colorMap.merged : (colorMap[node.source as keyof typeof colorMap] || '#64748b')}
-        nodeRelSize={4}
+        nodeRelSize={8}
         linkColor={(link: any) => colorMap[link.type as keyof typeof colorMap] || '#334155'}
-        linkWidth={(link: any) => link.type === 'Application' ? 2.2 : 1.3}
-        linkDirectionalArrowLength={5}
+        linkWidth={(link: any) => link.type === 'Application' ? 2.5 : 1.8}
+        linkDirectionalArrowLength={6}
         linkDirectionalArrowRelPos={1}
         onNodeClick={handleNodeClick}
         onNodeRightClick={handleNodeRightClick}
         onBackgroundClick={() => { onBgClick(); setContextMenu(null); }}
         nodeCanvasObject={(node: any, ctx, globalScale) => {
           const rawLabel = String(node.name || '');
-          const nodeRadius = Math.max(4, node.val || 4);
+          const nodeRadius = Math.max(8, (node.val || 4) * 1.5);
           const fillColor = node.type === 'merged' ? colorMap.merged : (colorMap[node.source as keyof typeof colorMap] || '#64748b');
 
           if (node.type === 'merged') {
-            // Hexagon for merged nodes
             drawHexagon(ctx, node.x!, node.y!, nodeRadius);
             ctx.fillStyle = fillColor;
             ctx.shadowColor = colorMap.merged;
-            ctx.shadowBlur = 10;
+            ctx.shadowBlur = 14;
             ctx.fill();
             ctx.shadowBlur = 0;
           } else {
-            // Circle for single-source nodes
             ctx.beginPath();
             ctx.arc(node.x!, node.y!, nodeRadius, 0, 2 * Math.PI, false);
             ctx.fillStyle = fillColor;
             ctx.fill();
           }
 
-          if (globalScale >= 0.8) {
-            const fontSize = Math.max(4, nodeRadius * 0.6);
-            ctx.font = `${fontSize}px Inter, Sans-Serif`;
-            ctx.textAlign = 'center';
-            ctx.textBaseline = 'middle';
-            ctx.fillStyle = '#f8fafc';
-            const maxLength = globalScale > 2 ? 15 : 8;
-            const label = rawLabel.length > maxLength ? rawLabel.substring(0, maxLength) + '...' : rawLabel;
-            ctx.shadowColor = '#000';
-            ctx.shadowBlur = 4;
-            ctx.fillText(label, node.x!, node.y! + nodeRadius + fontSize);
-            ctx.shadowBlur = 0;
-          }
+          // Always show text, scale with zoom
+          const fontSize = Math.max(8, Math.min(24, nodeRadius * 0.8 / Math.max(globalScale, 0.3)));
+          ctx.font = `600 ${fontSize}px Inter, Sans-Serif`;
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillStyle = '#f8fafc';
+          const maxLength = Math.max(6, Math.floor(12 / Math.max(globalScale, 0.5)));
+          const label = rawLabel.length > maxLength ? rawLabel.substring(0, maxLength) + '…' : rawLabel;
+          ctx.shadowColor = '#000';
+          ctx.shadowBlur = 6;
+          ctx.fillText(label, node.x!, node.y! + nodeRadius + fontSize * 0.7);
+          ctx.shadowBlur = 0;
         }}
         d3VelocityDecay={0.3}
       />
