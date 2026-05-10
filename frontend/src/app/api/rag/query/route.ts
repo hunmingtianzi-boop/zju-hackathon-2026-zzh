@@ -1,115 +1,62 @@
 import { NextResponse } from 'next/server';
-import { spawn } from 'child_process';
-import path from 'path';
-
-const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://127.0.0.1:8000';
+import agentDataRaw from '@/lib/agentData.json';
 
 interface Citation {
   source: string;
   chapter: string;
-  page: string;
   snippet: string;
   score: number;
 }
 
-interface RagResult {
-  question: string;
-  answer: string;
-  citations: Citation[];
-  total_chunks_searched: number;
-}
+function kgSearch(question: string, topK: number): Citation[] {
+  const nodes = (agentDataRaw as any).graph?.nodes || [];
+  const results: { node: any; score: number }[] = [];
 
-function callPythonRag(question: string, topK: number): Promise<RagResult> {
-  return new Promise((resolve, reject) => {
-    const projectRoot = path.resolve(process.cwd(), '..');
-    const scriptPath = path.join(projectRoot, 'rag_query.py');
-    const args = [scriptPath, question, '--top-k', String(topK)];
+  for (const node of nodes) {
+    const haystack = `${node.name || ''} ${node.essence || ''} ${node.reasoning || ''} ${(node.books || []).join(' ')}`.toLowerCase();
+    const q = question.toLowerCase();
+    let score = 0;
+    if (node.name?.includes(q)) score += 4;
+    if (haystack.includes(q)) score += 1;
+    const charOverlap = [...q].filter(c => haystack.includes(c)).length / Math.max(q.length, 1);
+    score += charOverlap * 2;
+    if (score > 0) results.push({ node, score });
+  }
+  results.sort((a, b) => b.score - a.score);
 
-    const proc = spawn('python', args, {
-      cwd: projectRoot,
-      env: { ...process.env, PYTHONIOENCODING: 'utf-8' },
-    });
-
-    let stdout = '';
-    let stderr = '';
-
-    proc.stdout.on('data', (data: Buffer) => {
-      stdout += data.toString('utf-8');
-    });
-
-    proc.stderr.on('data', (data: Buffer) => {
-      stderr += data.toString('utf-8');
-    });
-
-    // Timeout after 60s
-    const timer = setTimeout(() => {
-      proc.kill();
-      reject(new Error('RAG subprocess timed out after 60s'));
-    }, 60000);
-
-    proc.on('close', (code: number) => {
-      clearTimeout(timer);
-      if (code === 0) {
-        try {
-          resolve(JSON.parse(stdout) as RagResult);
-        } catch {
-          reject(new Error(`Failed to parse RAG output: ${stdout.slice(0, 200)}`));
-        }
-      } else {
-        reject(new Error(`Python exited ${code}: ${stderr.slice(0, 300)}`));
-      }
-    });
-
-    proc.on('error', (err: Error) => {
-      clearTimeout(timer);
-      reject(new Error(`Failed to spawn Python: ${err.message}`));
-    });
-  });
+  return results.slice(0, topK).map(r => ({
+    source: (r.node.books || ['整合图谱']).join(' / '),
+    chapter: r.node.name || '',
+    page: '',
+    snippet: r.node.essence || r.node.reasoning || '',
+    score: Math.min(r.score / 8, 1),
+  }));
 }
 
 export async function POST(request: Request) {
   try {
-    const body = await request.json();
-    const { question, top_k = 5 } = body;
-
-    if (!question || question.trim().length === 0) {
-      return NextResponse.json(
-        { error: 'Question is required' },
-        { status: 400 }
-      );
+    const { question, top_k = 5 } = await request.json();
+    if (!question?.trim()) {
+      return NextResponse.json({ error: 'Question is required' }, { status: 400 });
     }
 
-    // Attempt to proxy to Python backend
-    try {
-      const res = await fetch(`${BACKEND_URL}/api/rag/query`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ question, top_k }),
-        signal: AbortSignal.timeout(5000),
-      });
-      if (res.ok) {
-        return NextResponse.json(await res.json());
-      }
-    } catch {
-      console.warn('Backend /api/rag/query not reachable, trying local Python.');
-    }
+    const citations = kgSearch(question.trim(), top_k);
+    const top = citations.slice(0, 3).map((c, i) =>
+      `[${i + 1}] ${c.source} · ${c.chapter}\n   ${c.snippet?.slice(0, 150)}`
+    ).join('\n\n');
 
-    // Local Python subprocess
-    try {
-      const result = await callPythonRag(question.trim(), top_k);
-      return NextResponse.json(result);
-    } catch (pythonError) {
-      console.error('Python RAG failed:', pythonError);
-      return NextResponse.json({
-        answer: `[RAG 离线] 针对「${question}」，当前检索引擎暂时不可用。请运行 python search_engine.py 构建索引后重试。`,
-        citations: [],
-      });
-    }
+    const answer = citations.length
+      ? `围绕「${question}」，图谱定位到 ${citations.length} 个关联知识点：\n\n${top}`
+      : `针对「${question}」，当前知识图谱中未找到直接匹配的知识点。`;
+
+    return NextResponse.json({
+      question: question.trim(),
+      answer,
+      citations,
+      total_chunks_searched: (agentDataRaw as any).graph?.nodes?.length || 0,
+    });
   } catch (error) {
-    console.error('RAG API Error:', error);
-    return NextResponse.json(
-      { error: 'Internal Server Error' },
-      { status: 500 }
-    );
+    console.error('RAG Query Error:', error);
+    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
   }
 }
