@@ -176,7 +176,19 @@ export default function GraphCanvas({ data, onNodeClick, onBgClick, onNodeFeedba
           ctx.fillText(label, node.x!, node.y! + nodeRadius + fontSize * 0.7);
           ctx.shadowBlur = 0;
         }}
-        d3VelocityDecay={0.3}
+        warmupTicks={200}
+        cooldownTicks={300}
+        onEngineTick={() => {
+          try {
+            const fg = fgRef.current;
+            if (fg && fg.d3Force) {
+              const chargeForce = fg.d3Force('charge');
+              if (chargeForce) chargeForce.strength(-800);
+              const linkForce = fg.d3Force('link');
+              if (linkForce) linkForce.distance(150);
+            }
+          } catch {}
+        }}
       />
     </div>
   );
