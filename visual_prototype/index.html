@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZJU Hackathon - Knowledge Integration Agent</title>
+    <!-- Cytoscape.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.26.0/cytoscape.min.js"></script>
+    <!-- Dagre Layout -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dagre/0.8.5/dagre.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cytoscape-dagre@2.5.0/cytoscape-dagre.min.js"></script>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar glass-panel">
+            <div class="sidebar-header">
+                <div class="logo-area">
+                    <i class="fa-solid fa-network-wired logo-icon"></i>
+                    <h2>KIA <span>Nexus</span></h2>
+                </div>
+                <p class="subtitle">学科知识整合智能体</p>
+            </div>
+            
+            <div class="control-panel">
+                <h3>视图控制 (View Controls)</h3>
+                <div class="filter-group">
+                    <label><input type="checkbox" checked value="Prerequisite" class="rel-filter"> <span class="badge prereq">前置依赖</span></label>
+                    <label><input type="checkbox" checked value="Parallel" class="rel-filter"> <span class="badge parallel">并列关系</span></label>
+                    <label><input type="checkbox" checked value="Inclusion" class="rel-filter"> <span class="badge inclusion">包含关系</span></label>
+                    <label><input type="checkbox" checked value="Application" class="rel-filter"> <span class="badge app">应用关系</span></label>
+                </div>
+                
+                <div class="action-buttons">
+                    <button id="btn-layout-cose" class="btn primary"><i class="fa-solid fa-project-diagram"></i> 智能布局</button>
+                    <button id="btn-layout-dagre" class="btn primary" style="background:#10b981;"><i class="fa-solid fa-sitemap"></i> 知识流视图</button>
+                    <button id="btn-layout-circle" class="btn secondary"><i class="fa-solid fa-circle-notch"></i> 环形视图</button>
+                    <button id="btn-reset" class="btn secondary"><i class="fa-solid fa-expand"></i> 适配全屏</button>
+                </div>
+            </div>
+
+            <!-- Detail Panel (Hidden by default) -->
+            <div id="detail-panel" class="detail-panel hidden">
+                <h3>节点详情</h3>
+                <div id="node-info"></div>
+            </div>
+        </aside>
+
+        <!-- Main Graph Area -->
+        <main class="graph-container">
+            <header class="top-bar glass-panel">
+                <div class="search-box">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" id="search-input" placeholder="搜索实体 (如: 心房, 发热)...">
+                </div>
+                <div class="stats">
+                    <div class="stat-item">节点数: <span id="stat-nodes">0</span></div>
+                    <div class="stat-item">关系数: <span id="stat-edges">0</span></div>
+                    <div class="stat-item compression">压缩率: <span id="stat-ratio">28.4%</span></div>
+                </div>
+            </header>
+            
+            <div id="cy"></div>
+            
+            <!-- Context Menu (Innovation) -->
+            <div id="context-menu" class="context-menu hidden">
+                <div class="menu-item" id="ctx-feedback"><i class="fa-solid fa-comment-medical"></i> 提供教学反馈</div>
+                <div class="menu-item" id="ctx-expand"><i class="fa-solid fa-expand-arrows-alt"></i> 展开下级节点</div>
+                <div class="menu-item danger" id="ctx-remove"><i class="fa-solid fa-trash-can"></i> 建议剔除</div>
+            </div>
+        </main>
+    </div>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

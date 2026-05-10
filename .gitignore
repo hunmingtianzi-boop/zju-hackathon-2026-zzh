@@ -20,3 +20,21 @@ ENV/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Large index files
+medical_index_*
+
+# Node modules (root level)
+node_modules/
+
+# Environment secrets
+.env
+
+# Logs
+*.log
+
+# Uploads
+uploads/
+
+# Windows system artifact
+%SystemDrive%/

@@ -1,0 +1,78 @@
+{
+  "loader_version": "1.1.0",
+  "total_books": 7,
+  "total_sections": 7622,
+  "total_chars": 3381422,
+  "books": [
+    {
+      "book_id": "01_局部解剖学",
+      "source_path": "C:\\Users\\hunmi\\OneDrive\\Desktop\\黑客松zju\\textbooks\\01_局部解剖学.pdf",
+      "source_type": "pdf",
+      "sections": 987,
+      "chars": 318571,
+      "page_count": 300,
+      "page_start": 2,
+      "page_end": 305
+    },
+    {
+      "book_id": "02_组织学与胚胎学",
+      "source_path": "C:\\Users\\hunmi\\OneDrive\\Desktop\\黑客松zju\\textbooks\\02_组织学与胚胎学.pdf",
+      "source_type": "pdf",
+      "sections": 533,
+      "chars": 330519,
+      "page_count": 317,
+      "page_start": 2,
+      "page_end": 319
+    },
+    {
+      "book_id": "03_生理学",
+      "source_path": "C:\\Users\\hunmi\\OneDrive\\Desktop\\黑客松zju\\textbooks\\03_生理学.pdf",
+      "source_type": "pdf",
+      "sections": 1061,
+      "chars": 651704,
+      "page_count": 443,
+      "page_start": 1,
+      "page_end": 450
+    },
+    {
+      "book_id": "04_医学微生物学",
+      "source_path": "C:\\Users\\hunmi\\OneDrive\\Desktop\\黑客松zju\\textbooks\\04_医学微生物学.pdf",
+      "source_type": "pdf",
+      "sections": 1254,
+      "chars": 537996,
+      "page_count": 382,
+      "page_start": 1,
+      "page_end": 386
+    },
+    {
+      "book_id": "05_病理学",
+      "source_path": "C:\\Users\\hunmi\\OneDrive\\Desktop\\黑客松zju\\textbooks\\05_病理学.pdf",
+      "source_type": "pdf",
+      "sections": 1197,
+      "chars": 556920,
+      "page_count": 408,
+      "page_start": 1,
+      "page_end": 418
+    },
+    {
+      "book_id": "06_传染病学",
+      "source_path": "C:\\Users\\hunmi\\OneDrive\\Desktop\\黑客松zju\\textbooks\\06_传染病学.pdf",
+      "source_type": "pdf",
+      "sections": 1623,
+      "chars": 594299,
+      "page_count": 396,
+      "page_start": 1,
+      "page_end": 398
+    },
+    {
+      "book_id": "07_病理生理学",
+      "source_path": "C:\\Users\\hunmi\\OneDrive\\Desktop\\黑客松zju\\textbooks\\07_病理生理学.pdf",
+      "source_type": "pdf",
+      "sections": 967,
+      "chars": 391413,
+      "page_count": 283,
+      "page_start": 1,
+      "page_end": 291
+    }
+  ]
+}

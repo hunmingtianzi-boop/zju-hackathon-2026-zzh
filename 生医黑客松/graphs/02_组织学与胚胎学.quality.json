@@ -1,0 +1,38 @@
+{
+  "book_id": "02_组织学与胚胎学",
+  "nodes": 289,
+  "edges": 849,
+  "triples": 1132,
+  "relation_counts": {
+    "prerequisite": 281,
+    "parallel": 281,
+    "containment": 281,
+    "application": 6
+  },
+  "prerequisite_cycles": [],
+  "low_degree_nodes": [
+    "为弥合临床与预防的裂痕作出积极探索，梳理临床医学",
+    "代德高望重、有丰富的临床和教学经验、有高度责任感和敬业精",
+    "以满足重大疾病临床需求为导向，新增《重症医学》",
+    "化重组《流行病学》《预防医学》等教材内容，撤销内容重复的",
+    "国家卫生健康委员会“ 十四五” 规划教材",
+    "国高等学校五年制本科临床医学专业国家卫生健康委员会规划教",
+    "重视营养的基础与一线治疗作用，新增《临床营养学》，更新营"
+  ],
+  "invalid_triples": [
+    {
+      "subject": "组织学与胚胎学",
+      "relation": "containment",
+      "object": "组织学与胚胎学",
+      "evidence": "组织学与胚胎学 下设标题：组织学与胚胎学",
+      "source_path": "C:\\Users\\hunmi\\OneDrive\\Desktop\\黑客松zju\\生医黑客松\\02_组织学与胚胎学.md#section-1",
+      "book_id": "02_组织学与胚胎学",
+      "chapter": "02",
+      "section": "组织学与胚胎学",
+      "confidence": 0.88,
+      "extractor": "rule_based",
+      "metadata": {},
+      "reason": "Self-loop triples are not allowed"
+    }
+  ]
+}
