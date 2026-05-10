@@ -132,8 +132,7 @@ class LLMBinaryClassifier:
 
 你的判断:"""
 
-    def __init__(self, model: str = "qwen2.5:3b", cache_dir: str = "生医黑客松/.llm_classify_cache"):
-        self.model = model
+    def __init__(self, cache_dir: str = "生医黑客松/.llm_classify_cache"):
         self.cache_dir = Path(cache_dir)
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self._call_count = 0
@@ -156,7 +155,7 @@ class LLMBinaryClassifier:
             label_a=label_a, label_b=label_b,
             book_a=book_a, book_b=book_b,
         )
-        response = self._ollama(prompt)
+        response = self._llm_classify(prompt)
 
         is_same = False
         rationale = ""

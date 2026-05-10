@@ -598,37 +598,24 @@ class LLMTripleExtractor:
 
 请输出 JSON 数组："""
 
-    def __init__(self, model: str = "qwen2.5:3b", cache_dir: str = "生医黑客松/.triple_cache"):
-        self.model = model
+    def __init__(self, cache_dir: str = "生医黑客松/.triple_cache"):
         self.cache_dir = Path(cache_dir)
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self._call_count = 0
         self._total_time = 0.0
 
     def _llm_call(self, prompt: str, timeout: int = 120) -> str:
+        from llm_client import chat
         t0 = time.time()
-        try:
-            result = subprocess.run(
-                ['ollama', 'run', self.model, prompt],
-                capture_output=True, text=True, timeout=timeout,
-                encoding='utf-8', errors='replace',
-            )
-            elapsed = time.time() - t0
-            self._call_count += 1
-            self._total_time += elapsed
-            if result.returncode != 0:
-                print(f"  [LLM] ERROR (call #{self._call_count}, {elapsed:.1f}s): {result.stderr[:200]}")
-                return ""
-            print(f"  [LLM] call #{self._call_count} ok ({elapsed:.1f}s, {len(result.stdout)} chars)")
-            return result.stdout.strip()
-        except subprocess.TimeoutExpired:
-            elapsed = time.time() - t0
-            print(f"  [LLM] TIMEOUT after {elapsed:.1f}s")
-            self._call_count += 1
-            return ""
-        except FileNotFoundError:
-            print("  [LLM] ollama not found in PATH")
-            return ""
+        result = chat(prompt, system="你是专业医学知识工程师。请严格输出JSON。", temperature=0.1)
+        elapsed = time.time() - t0
+        self._call_count += 1
+        self._total_time += elapsed
+        if result:
+            print(f"  [LLM] call #{self._call_count} ok ({elapsed:.1f}s, {len(result)} chars)")
+        else:
+            print(f"  [LLM] call #{self._call_count} FAILED ({elapsed:.1f}s)")
+        return result
 
     def _extract_json(self, response: str) -> list[dict]:
         if not response:

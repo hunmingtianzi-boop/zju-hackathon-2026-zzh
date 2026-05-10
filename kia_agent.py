@@ -54,9 +54,13 @@ class KIAAgent:
         if self._search_engine is None:
             from search_engine import MedicalSearchEngine
             engine = MedicalSearchEngine()
-            index_meta = ROOT / "medical_index_meta.pkl"
+            # Use os.getcwd-relative path to avoid Chinese-path encoding issues on Windows
+            index_meta = Path("medical_index_meta.pkl")
+            if not index_meta.exists():
+                index_meta = ROOT / "medical_index_meta.pkl"
             if index_meta.exists():
-                engine.load(str(ROOT / "medical_index"))
+                index_prefix = str(index_meta.parent / "medical_index")
+                engine.load(index_prefix)
             self._search_engine = engine
         return self._search_engine
 
@@ -203,7 +207,9 @@ class KIAAgent:
         # Pathway B: semantic chunk search (lazy — only when index exists)
         search_results = None
         try:
-            idx_meta = ROOT / "medical_index_meta.pkl"
+            idx_meta = Path("medical_index_meta.pkl")
+            if not idx_meta.exists():
+                idx_meta = ROOT / "medical_index_meta.pkl"
             if idx_meta.exists():
                 search_results = self.search(question, top_k=limit)
         except Exception:

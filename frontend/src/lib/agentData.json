@@ -36,7 +36,7 @@
     "complementCount": 279,
     "dedupRatio": 0.02255389718076284,
     "compressionRatio": 0.21113786759763878,
-    "rawCompressionRatio": 0.8234962918582188,
+    "rawCompressionRatio": 0.2048806903941653,
     "compressionTargetMet": true
   },
   "graph": {
@@ -84,6 +84,48 @@
         "confidence": 0.732
       },
       {
+        "id": "第十五章心功能不全",
+        "name": "第十五章心功能不全",
+        "val": 17,
+        "type": "single",
+        "source": "07",
+        "books": [
+          "07 病理生理学"
+        ],
+        "essence": "第十五章心功能不全 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第十一章消化系统疾病",
+        "name": "第十一章消化系统疾病",
+        "val": 17,
+        "type": "merged",
+        "source": "05",
+        "books": [
+          "05 病理学"
+        ],
+        "essence": "语义相似度 0.72（待确认）：「第十一章消化系统疾病」↔「主要」",
+        "reasoning": "语义相似度 0.72（待确认）：「第十一章消化系统疾病」↔「主要」",
+        "decisionId": "decision_02368",
+        "confidence": 0.724
+      },
+      {
+        "id": "第九章心血管系统疾病",
+        "name": "第九章心血管系统疾病",
+        "val": 17,
+        "type": "merged",
+        "source": "05",
+        "books": [
+          "05 病理学"
+        ],
+        "essence": "语义相似度 0.71（待确认）：「第九章心血管系统疾病」↔「健康」",
+        "reasoning": "语义相似度 0.71（待确认）：「第九章心血管系统疾病」↔「健康」",
+        "decisionId": "decision_02250",
+        "confidence": 0.709
+      },
+      {
         "id": "第二章颈部",
         "name": "第二章颈部",
         "val": 17,
@@ -98,6 +140,48 @@
         "confidence": 0.728
       },
       {
+        "id": "第三章胸部",
+        "name": "第三章胸部",
+        "val": 17,
+        "type": "single",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "第三章胸部 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第三章病毒性疾病",
+        "name": "第三章病毒性疾病",
+        "val": 17,
+        "type": "merged",
+        "source": "06",
+        "books": [
+          "06 传染病学"
+        ],
+        "essence": "语义相似度 0.80（待确认）：「第三章病毒性疾病」↔「以及」",
+        "reasoning": "语义相似度 0.80（待确认）：「第三章病毒性疾病」↔「以及」",
+        "decisionId": "decision_02727",
+        "confidence": 0.803
+      },
+      {
+        "id": "第五章细菌性疾病",
+        "name": "第五章细菌性疾病",
+        "val": 17,
+        "type": "merged",
+        "source": "06",
+        "books": [
+          "06 传染病学"
+        ],
+        "essence": "语义相似度 0.71（待确认）：「第五章细菌性疾病」↔「病因」",
+        "reasoning": "语义相似度 0.71（待确认）：「第五章细菌性疾病」↔「病因」",
+        "decisionId": "decision_02795",
+        "confidence": 0.706
+      },
+      {
         "id": "第五章盆部与会阴",
         "name": "第五章盆部与会阴",
         "val": 17,
@@ -110,6 +194,34 @@
         "reasoning": "语义相似度 0.84（待确认）：「第五章盆部与会阴」↔「动脉」",
         "decisionId": "decision_00205",
         "confidence": 0.839
+      },
+      {
+        "id": "防治原则",
+        "name": "防治原则",
+        "val": 17,
+        "type": "merged",
+        "source": "04",
+        "books": [
+          "04 医学微生物学"
+        ],
+        "essence": "语义相似度 0.76（待确认）：「防治原则」↔「疾病」",
+        "reasoning": "语义相似度 0.76（待确认）：「防治原则」↔「疾病」",
+        "decisionId": "decision_01418",
+        "confidence": 0.755
+      },
+      {
+        "id": "第八章下肢",
+        "name": "第八章下肢",
+        "val": 17,
+        "type": "merged",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "语义相似度 0.81（待确认）：「第八章下肢」↔「第一节 | 概 述」",
+        "reasoning": "语义相似度 0.81（待确认）：「第八章下肢」↔「第一节 | 概 述」",
+        "decisionId": "decision_00245",
+        "confidence": 0.814
       },
       {
         "id": "第一节 | 概 述",
@@ -128,60 +240,18 @@
         "confidence": 0.95
       },
       {
-        "id": "第八章下肢",
-        "name": "第八章下肢",
-        "val": 17,
-        "type": "merged",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "语义相似度 0.81（待确认）：「第八章下肢」↔「第一节 | 概 述」",
-        "reasoning": "语义相似度 0.81（待确认）：「第八章下肢」↔「第一节 | 概 述」",
-        "decisionId": "decision_00245",
-        "confidence": 0.814
-      },
-      {
-        "id": "第十一章消化系统疾病",
-        "name": "第十一章消化系统疾病",
+        "id": "第十九章病理学诊断与研究技术",
+        "name": "第十九章病理学诊断与研究技术",
         "val": 17,
         "type": "merged",
         "source": "05",
         "books": [
           "05 病理学"
         ],
-        "essence": "语义相似度 0.72（待确认）：「第十一章消化系统疾病」↔「主要」",
-        "reasoning": "语义相似度 0.72（待确认）：「第十一章消化系统疾病」↔「主要」",
-        "decisionId": "decision_02368",
-        "confidence": 0.724
-      },
-      {
-        "id": "第四章腹部",
-        "name": "第四章腹部",
-        "val": 17,
-        "type": "merged",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "语义相似度 0.75（待确认）：「第四章腹部」↔「系统的」",
-        "reasoning": "语义相似度 0.75（待确认）：「第四章腹部」↔「系统的」",
-        "decisionId": "decision_00290",
-        "confidence": 0.747
-      },
-      {
-        "id": "第三章病毒性疾病",
-        "name": "第三章病毒性疾病",
-        "val": 17,
-        "type": "merged",
-        "source": "06",
-        "books": [
-          "06 传染病学"
-        ],
-        "essence": "语义相似度 0.80（待确认）：「第三章病毒性疾病」↔「以及」",
-        "reasoning": "语义相似度 0.80（待确认）：「第三章病毒性疾病」↔「以及」",
-        "decisionId": "decision_02727",
-        "confidence": 0.803
+        "essence": "语义相似度 0.74（待确认）：「第十九章病理学诊断与研究技术」↔「主要」",
+        "reasoning": "语义相似度 0.74（待确认）：「第十九章病理学诊断与研究技术」↔「主要」",
+        "decisionId": "decision_02437",
+        "confidence": 0.744
       },
       {
         "id": "第七章上肢",
@@ -198,88 +268,18 @@
         "confidence": 0.744
       },
       {
-        "id": "防治原则",
-        "name": "防治原则",
+        "id": "第四章腹部",
+        "name": "第四章腹部",
         "val": 17,
         "type": "merged",
-        "source": "04",
-        "books": [
-          "04 医学微生物学"
-        ],
-        "essence": "语义相似度 0.76（待确认）：「防治原则」↔「疾病」",
-        "reasoning": "语义相似度 0.76（待确认）：「防治原则」↔「疾病」",
-        "decisionId": "decision_01418",
-        "confidence": 0.755
-      },
-      {
-        "id": "第十五章心功能不全",
-        "name": "第十五章心功能不全",
-        "val": 17,
-        "type": "single",
-        "source": "07",
-        "books": [
-          "07 病理生理学"
-        ],
-        "essence": "第十五章心功能不全 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
-        "id": "第五章细菌性疾病",
-        "name": "第五章细菌性疾病",
-        "val": 17,
-        "type": "merged",
-        "source": "06",
-        "books": [
-          "06 传染病学"
-        ],
-        "essence": "语义相似度 0.71（待确认）：「第五章细菌性疾病」↔「病因」",
-        "reasoning": "语义相似度 0.71（待确认）：「第五章细菌性疾病」↔「病因」",
-        "decisionId": "decision_02795",
-        "confidence": 0.706
-      },
-      {
-        "id": "第九章心血管系统疾病",
-        "name": "第九章心血管系统疾病",
-        "val": 17,
-        "type": "merged",
-        "source": "05",
-        "books": [
-          "05 病理学"
-        ],
-        "essence": "语义相似度 0.71（待确认）：「第九章心血管系统疾病」↔「健康」",
-        "reasoning": "语义相似度 0.71（待确认）：「第九章心血管系统疾病」↔「健康」",
-        "decisionId": "decision_02250",
-        "confidence": 0.709
-      },
-      {
-        "id": "第十九章病理学诊断与研究技术",
-        "name": "第十九章病理学诊断与研究技术",
-        "val": 17,
-        "type": "merged",
-        "source": "05",
-        "books": [
-          "05 病理学"
-        ],
-        "essence": "语义相似度 0.74（待确认）：「第十九章病理学诊断与研究技术」↔「主要」",
-        "reasoning": "语义相似度 0.74（待确认）：「第十九章病理学诊断与研究技术」↔「主要」",
-        "decisionId": "decision_02437",
-        "confidence": 0.744
-      },
-      {
-        "id": "第三章胸部",
-        "name": "第三章胸部",
-        "val": 17,
-        "type": "single",
         "source": "01",
         "books": [
           "01 局部解剖学"
         ],
-        "essence": "第三章胸部 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
+        "essence": "语义相似度 0.75（待确认）：「第四章腹部」↔「系统的」",
+        "reasoning": "语义相似度 0.75（待确认）：「第四章腹部」↔「系统的」",
+        "decisionId": "decision_00290",
+        "confidence": 0.747
       },
       {
         "id": "第六章肿瘤",
@@ -310,20 +310,6 @@
         "confidence": 0.718
       },
       {
-        "id": "第七节 | 临床病例分析",
-        "name": "第七节 | 临床病例分析",
-        "val": 12,
-        "type": "single",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "第七节 | 临床病例分析 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
         "id": "生物学特性",
         "name": "生物学特性",
         "val": 12,
@@ -338,18 +324,18 @@
         "confidence": 0.818
       },
       {
-        "id": "第五节 | 克雷伯菌属",
-        "name": "第五节 | 克雷伯菌属",
-        "val": 11,
-        "type": "merged",
-        "source": "04",
+        "id": "第七节 | 临床病例分析",
+        "name": "第七节 | 临床病例分析",
+        "val": 12,
+        "type": "single",
+        "source": "01",
         "books": [
-          "04 医学微生物学"
+          "01 局部解剖学"
         ],
-        "essence": "语义相似度 0.78（待确认）：「第五节 | 克雷伯菌属」↔「形成」",
-        "reasoning": "语义相似度 0.78（待确认）：「第五节 | 克雷伯菌属」↔「形成」",
-        "decisionId": "decision_02144",
-        "confidence": 0.778
+        "essence": "第七节 | 临床病例分析 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
       },
       {
         "id": "第二节 | 百日咳鲍特菌",
@@ -364,6 +350,20 @@
         "reasoning": "语义相似度 0.86（待确认）：「第二节 | 百日咳鲍特菌」↔「是一种」",
         "decisionId": "decision_02087",
         "confidence": 0.862
+      },
+      {
+        "id": "第五节 | 戊型肝炎病毒",
+        "name": "第五节 | 戊型肝炎病毒",
+        "val": 11,
+        "type": "merged",
+        "source": "04",
+        "books": [
+          "04 医学微生物学"
+        ],
+        "essence": "语义相似度 0.80（待确认）：「第五节 | 戊型肝炎病毒」↔「迄今」",
+        "reasoning": "语义相似度 0.80（待确认）：「第五节 | 戊型肝炎病毒」↔「迄今」",
+        "decisionId": "decision_01718",
+        "confidence": 0.798
       },
       {
         "id": "第二节 | 军团菌属",
@@ -394,116 +394,32 @@
         "confidence": 0.854
       },
       {
-        "id": "第五节 | 戊型肝炎病毒",
-        "name": "第五节 | 戊型肝炎病毒",
+        "id": "第五节 | 克雷伯菌属",
+        "name": "第五节 | 克雷伯菌属",
         "val": 11,
         "type": "merged",
         "source": "04",
         "books": [
           "04 医学微生物学"
         ],
-        "essence": "语义相似度 0.80（待确认）：「第五节 | 戊型肝炎病毒」↔「迄今」",
-        "reasoning": "语义相似度 0.80（待确认）：「第五节 | 戊型肝炎病毒」↔「迄今」",
-        "decisionId": "decision_01718",
-        "confidence": 0.798
+        "essence": "语义相似度 0.78（待确认）：「第五节 | 克雷伯菌属」↔「形成」",
+        "reasoning": "语义相似度 0.78（待确认）：「第五节 | 克雷伯菌属」↔「形成」",
+        "decisionId": "decision_02144",
+        "confidence": 0.778
       },
       {
-        "id": "第九节 | 图像采集和分析技术",
-        "name": "第九节 | 图像采集和分析技术",
-        "val": 10,
-        "type": "single",
-        "source": "05",
-        "books": [
-          "05 病理学"
-        ],
-        "essence": "第九节 | 图像采集和分析技术 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
-        "id": "第二节 | 组织化学和免疫组织（细胞）化学技术",
-        "name": "第二节 | 组织化学和免疫组织（细胞）化学技术",
-        "val": 10,
-        "type": "merged",
-        "source": "05",
-        "books": [
-          "05 病理学"
-        ],
-        "essence": "语义相似度 0.87（待确认）：「第二节 | 组织化学和免疫组织（细胞）化学技术」↔「不仅」",
-        "reasoning": "语义相似度 0.87（待确认）：「第二节 | 组织化学和免疫组织（细胞）化学技术」↔「不仅」",
-        "decisionId": "decision_02464",
-        "confidence": 0.874
-      },
-      {
-        "id": "第五节 | 沙门菌感染",
-        "name": "第五节 | 沙门菌感染",
-        "val": 10,
-        "type": "single",
-        "source": "06",
-        "books": [
-          "06 传染病学"
-        ],
-        "essence": "第五节 | 沙门菌感染 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
-        "id": "第三节 | 流行性感冒病毒感染",
-        "name": "第三节 | 流行性感冒病毒感染",
-        "val": 10,
-        "type": "merged",
-        "source": "06",
-        "books": [
-          "06 传染病学"
-        ],
-        "essence": "语义相似度 0.89：「第三节 | 流行性感冒病毒感染」↔「主要」",
-        "reasoning": "语义相似度 0.89：「第三节 | 流行性感冒病毒感染」↔「主要」",
-        "decisionId": "decision_02744",
-        "confidence": 0.89
-      },
-      {
-        "id": "第二节 | 水痘 - 带状疱疹病毒",
-        "name": "第二节 | 水痘 - 带状疱疹病毒",
+        "id": "第三节 | 肠球菌属",
+        "name": "第三节 | 肠球菌属",
         "val": 10,
         "type": "merged",
         "source": "04",
         "books": [
           "04 医学微生物学"
         ],
-        "essence": "语义相似度 0.88：「第二节 | 水痘 - 带状疱疹病毒」↔「疾病」",
-        "reasoning": "语义相似度 0.88：「第二节 | 水痘 - 带状疱疹病毒」↔「疾病」",
-        "decisionId": "decision_01483",
-        "confidence": 0.884
-      },
-      {
-        "id": "第四节 结肠下区128",
-        "name": "第四节 结肠下区128",
-        "val": 10,
-        "type": "single",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "第四节 结肠下区128 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
-        "id": "第二节 | 流行性脑脊髓膜炎",
-        "name": "第二节 | 流行性脑脊髓膜炎",
-        "val": 10,
-        "type": "merged",
-        "source": "06",
-        "books": [
-          "06 传染病学"
-        ],
-        "essence": "语义相似度 0.75（待确认）：「第二节 | 流行性脑脊髓膜炎」↔「主要」",
-        "reasoning": "语义相似度 0.75（待确认）：「第二节 | 流行性脑脊髓膜炎」↔「主要」",
-        "decisionId": "decision_02820",
-        "confidence": 0.75
+        "essence": "语义相似度 0.82（待确认）：「第三节 | 肠球菌属」↔「形成」",
+        "reasoning": "语义相似度 0.82（待确认）：「第三节 | 肠球菌属」↔「形成」",
+        "decisionId": "decision_01632",
+        "confidence": 0.824
       },
       {
         "id": "第二节 分类182",
@@ -520,46 +436,46 @@
         "confidence": null
       },
       {
-        "id": "第三节 膈69",
-        "name": "第三节 膈69",
-        "val": 10,
-        "type": "merged",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "语义相似度 0.75（待确认）：「第三节 膈69」↔「淋巴」",
-        "reasoning": "语义相似度 0.75（待确认）：「第三节 膈69」↔「淋巴」",
-        "decisionId": "decision_00124",
-        "confidence": 0.753
-      },
-      {
-        "id": "第五节 颈外侧区56",
-        "name": "第五节 颈外侧区56",
-        "val": 10,
-        "type": "merged",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "语义相似度 0.84（待确认）：「第五节 颈外侧区56」↔「淋巴」",
-        "reasoning": "语义相似度 0.84（待确认）：「第五节 颈外侧区56」↔「淋巴」",
-        "decisionId": "decision_00176",
-        "confidence": 0.836
-      },
-      {
-        "id": "第三节 | 动脉瘤",
-        "name": "第三节 | 动脉瘤",
+        "id": "第二节 | 肿瘤的形态和结构",
+        "name": "第二节 | 肿瘤的形态和结构",
         "val": 10,
         "type": "merged",
         "source": "05",
         "books": [
           "05 病理学"
         ],
-        "essence": "语义相似度 0.78（待确认）：「第三节 | 动脉瘤」↔「病因」",
-        "reasoning": "语义相似度 0.78（待确认）：「第三节 | 动脉瘤」↔「病因」",
-        "decisionId": "decision_02261",
-        "confidence": 0.775
+        "essence": "语义相似度 0.87（待确认）：「第二节 | 肿瘤的形态和结构」↔「肿瘤」",
+        "reasoning": "语义相似度 0.87（待确认）：「第二节 | 肿瘤的形态和结构」↔「肿瘤」",
+        "decisionId": "decision_02330",
+        "confidence": 0.874
+      },
+      {
+        "id": "第九节 | 图像采集和分析技术",
+        "name": "第九节 | 图像采集和分析技术",
+        "val": 10,
+        "type": "single",
+        "source": "05",
+        "books": [
+          "05 病理学"
+        ],
+        "essence": "第九节 | 图像采集和分析技术 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第六节 踝部和足部259",
+        "name": "第六节 踝部和足部259",
+        "val": 10,
+        "type": "merged",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "语义相似度 0.75（待确认）：「第六节 踝部和足部259」↔「静脉」",
+        "reasoning": "语义相似度 0.75（待确认）：「第六节 踝部和足部259」↔「静脉」",
+        "decisionId": "decision_00259",
+        "confidence": 0.751
       },
       {
         "id": "第七节 | 上肢的解剖操作",
@@ -576,326 +492,18 @@
         "confidence": 0.737
       },
       {
-        "id": "第二节 腹前外侧壁94",
-        "name": "第二节 腹前外侧壁94",
-        "val": 10,
-        "type": "merged",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "语义相似度 0.83（待确认）：「第二节 腹前外侧壁94」↔「睾丸」",
-        "reasoning": "语义相似度 0.83（待确认）：「第二节 腹前外侧壁94」↔「睾丸」",
-        "decisionId": "decision_00305",
-        "confidence": 0.826
-      },
-      {
-        "id": "第二节 | 肿瘤的形态和结构",
-        "name": "第二节 | 肿瘤的形态和结构",
-        "val": 10,
-        "type": "merged",
-        "source": "05",
-        "books": [
-          "05 病理学"
-        ],
-        "essence": "语义相似度 0.87（待确认）：「第二节 | 肿瘤的形态和结构」↔「肿瘤」",
-        "reasoning": "语义相似度 0.87（待确认）：「第二节 | 肿瘤的形态和结构」↔「肿瘤」",
-        "decisionId": "decision_02330",
-        "confidence": 0.874
-      },
-      {
-        "id": "第八节 临床病例分析268",
-        "name": "第八节 临床病例分析268",
-        "val": 10,
-        "type": "single",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "第八节 临床病例分析268 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
-        "id": "第五节 腹膜后间隙135",
-        "name": "第五节 腹膜后间隙135",
-        "val": 10,
-        "type": "merged",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "语义相似度 0.80（待确认）：「第五节 腹膜后间隙135」↔「动脉」",
-        "reasoning": "语义相似度 0.80（待确认）：「第五节 腹膜后间隙135」↔「动脉」",
-        "decisionId": "decision_00310",
-        "confidence": 0.805
-      },
-      {
-        "id": "第七节 胸部解剖操作86",
-        "name": "第七节 胸部解剖操作86",
-        "val": 10,
-        "type": "single",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "第七节 胸部解剖操作86 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
-        "id": "第六节 | 原位杂交技术",
-        "name": "第六节 | 原位杂交技术",
-        "val": 10,
-        "type": "single",
-        "source": "05",
-        "books": [
-          "05 病理学"
-        ],
-        "essence": "第六节 | 原位杂交技术 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
-        "id": "第二节 颈部的层次结构41",
-        "name": "第二节 颈部的层次结构41",
-        "val": 10,
-        "type": "single",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "第二节 颈部的层次结构41 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
-        "id": "第三节 | 假单胞菌属",
-        "name": "第三节 | 假单胞菌属",
-        "val": 10,
-        "type": "merged",
-        "source": "04",
-        "books": [
-          "04 医学微生物学"
-        ],
-        "essence": "语义相似度 0.83（待确认）：「第三节 | 假单胞菌属」↔「是一种」",
-        "reasoning": "语义相似度 0.83（待确认）：「第三节 | 假单胞菌属」↔「是一种」",
-        "decisionId": "decision_01732",
-        "confidence": 0.831
-      },
-      {
-        "id": "第九节 | 霍 乱",
-        "name": "第九节 | 霍 乱",
+        "id": "第二节 | 肠道病毒感染",
+        "name": "第二节 | 肠道病毒感染",
         "val": 10,
         "type": "merged",
         "source": "06",
         "books": [
           "06 传染病学"
         ],
-        "essence": "语义相似度 0.78（待确认）：「第九节 | 霍 乱」↔「病因」",
-        "reasoning": "语义相似度 0.78（待确认）：「第九节 | 霍 乱」↔「病因」",
-        "decisionId": "decision_02819",
-        "confidence": 0.778
-      },
-      {
-        "id": "第八节 | 临床病例分析",
-        "name": "第八节 | 临床病例分析",
-        "val": 10,
-        "type": "single",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "第八节 | 临床病例分析 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
-        "id": "第八节 | 心肌炎",
-        "name": "第八节 | 心肌炎",
-        "val": 10,
-        "type": "merged",
-        "source": "05",
-        "books": [
-          "05 病理学"
-        ],
-        "essence": "语义相似度 0.75（待确认）：「第八节 | 心肌炎」↔「鉴别」",
-        "reasoning": "语义相似度 0.75（待确认）：「第八节 | 心肌炎」↔「鉴别」",
-        "decisionId": "decision_02265",
-        "confidence": 0.75
-      },
-      {
-        "id": "第四节 发生发展机制187",
-        "name": "第四节 发生发展机制187",
-        "val": 10,
-        "type": "single",
-        "source": "07",
-        "books": [
-          "07 病理生理学"
-        ],
-        "essence": "第四节 发生发展机制187 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
-        "id": "第三节 | 人巨细胞病毒",
-        "name": "第三节 | 人巨细胞病毒",
-        "val": 10,
-        "type": "merged",
-        "source": "04",
-        "books": [
-          "04 医学微生物学"
-        ],
-        "essence": "语义相似度 0.82（待确认）：「第三节 | 人巨细胞病毒」↔「形成」",
-        "reasoning": "语义相似度 0.82（待确认）：「第三节 | 人巨细胞病毒」↔「形成」",
-        "decisionId": "decision_01470",
-        "confidence": 0.824
-      },
-      {
-        "id": "第五节 | 非特异性肠炎",
-        "name": "第五节 | 非特异性肠炎",
-        "val": 10,
-        "type": "merged",
-        "source": "05",
-        "books": [
-          "05 病理学"
-        ],
-        "essence": "语义相似度 0.85（待确认）：「第五节 | 非特异性肠炎」↔「病原」",
-        "reasoning": "语义相似度 0.85（待确认）：「第五节 | 非特异性肠炎」↔「病原」",
-        "decisionId": "decision_02389",
-        "confidence": 0.852
-      },
-      {
-        "id": "第五节 功能代谢变化的病理生理学基础190",
-        "name": "第五节 功能代谢变化的病理生理学基础190",
-        "val": 10,
-        "type": "single",
-        "source": "07",
-        "books": [
-          "07 病理生理学"
-        ],
-        "essence": "第五节 功能代谢变化的病理生理学基础190 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
-        "id": "第八节 | 流行性腮腺炎",
-        "name": "第八节 | 流行性腮腺炎",
-        "val": 10,
-        "type": "merged",
-        "source": "06",
-        "books": [
-          "06 传染病学"
-        ],
-        "essence": "语义相似度 0.84（待确认）：「第八节 | 流行性腮腺炎」↔「主要」",
-        "reasoning": "语义相似度 0.84（待确认）：「第八节 | 流行性腮腺炎」↔「主要」",
-        "decisionId": "decision_02754",
-        "confidence": 0.843
-      },
-      {
-        "id": "第七节 上肢的解剖操作232",
-        "name": "第七节 上肢的解剖操作232",
-        "val": 10,
-        "type": "single",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "第七节 上肢的解剖操作232 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
-        "id": "第六节 腹部解剖操作144",
-        "name": "第六节 腹部解剖操作144",
-        "val": 10,
-        "type": "single",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "第六节 腹部解剖操作144 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
-        "id": "第六节 防治的病理生理学基础192",
-        "name": "第六节 防治的病理生理学基础192",
-        "val": 10,
-        "type": "single",
-        "source": "07",
-        "books": [
-          "07 病理生理学"
-        ],
-        "essence": "第六节 防治的病理生理学基础192 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
-        "id": "第三节 | 会 阴",
-        "name": "第三节 | 会 阴",
-        "val": 10,
-        "type": "merged",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "语义相似度 0.75（待确认）：「第三节 | 会 阴」↔「阴道」",
-        "reasoning": "语义相似度 0.75（待确认）：「第三节 | 会 阴」↔「阴道」",
-        "decisionId": "decision_00227",
-        "confidence": 0.745
-      },
-      {
-        "id": "第二节 | 颈部的层次结构",
-        "name": "第二节 | 颈部的层次结构",
-        "val": 10,
-        "type": "single",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "第二节 | 颈部的层次结构 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
-        "id": "第六节 | 风 疹",
-        "name": "第六节 | 风 疹",
-        "val": 10,
-        "type": "merged",
-        "source": "06",
-        "books": [
-          "06 传染病学"
-        ],
-        "essence": "语义相似度 0.80（待确认）：「第六节 | 风 疹」↔「主要」",
-        "reasoning": "语义相似度 0.80（待确认）：「第六节 | 风 疹」↔「主要」",
-        "decisionId": "decision_02755",
-        "confidence": 0.797
-      },
-      {
-        "id": "第七节 | 心肌病",
-        "name": "第七节 | 心肌病",
-        "val": 10,
-        "type": "merged",
-        "source": "05",
-        "books": [
-          "05 病理学"
-        ],
-        "essence": "语义相似度 0.84（待确认）：「第七节 | 心肌病」↔「主要」",
-        "reasoning": "语义相似度 0.84（待确认）：「第七节 | 心肌病」↔「主要」",
-        "decisionId": "decision_02258",
-        "confidence": 0.836
+        "essence": "语义相似度 0.77（待确认）：「第二节 | 肠道病毒感染」↔「健康」",
+        "reasoning": "语义相似度 0.77（待确认）：「第二节 | 肠道病毒感染」↔「健康」",
+        "decisionId": "decision_02747",
+        "confidence": 0.766
       },
       {
         "id": "第八节 | 流式细胞术",
@@ -912,32 +520,88 @@
         "confidence": 0.828
       },
       {
-        "id": "第二节 臀部244",
-        "name": "第二节 臀部244",
+        "id": "第五节 | 腹膜后间隙",
+        "name": "第五节 | 腹膜后间隙",
+        "val": 10,
+        "type": "merged",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "语义相似度 0.85（待确认）：「第五节 | 腹膜后间隙」↔「淋巴」",
+        "reasoning": "语义相似度 0.85（待确认）：「第五节 | 腹膜后间隙」↔「淋巴」",
+        "decisionId": "decision_00327",
+        "confidence": 0.847
+      },
+      {
+        "id": "第六节 | 原位杂交技术",
+        "name": "第六节 | 原位杂交技术",
+        "val": 10,
+        "type": "single",
+        "source": "05",
+        "books": [
+          "05 病理学"
+        ],
+        "essence": "第六节 | 原位杂交技术 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第三节 臂部214",
+        "name": "第三节 臂部214",
         "val": 10,
         "type": "single",
         "source": "01",
         "books": [
           "01 局部解剖学"
         ],
-        "essence": "第二节 臀部244 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "essence": "第三节 臂部214 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
         "reasoning": "由单本图谱与跨教材合并结果生成。",
         "decisionId": null,
         "confidence": null
       },
       {
-        "id": "第十一节 | 炭 疽",
-        "name": "第十一节 | 炭 疽",
+        "id": "第五节 | 麻 疹",
+        "name": "第五节 | 麻 疹",
+        "val": 10,
+        "type": "single",
+        "source": "06",
+        "books": [
+          "06 传染病学"
+        ],
+        "essence": "第五节 | 麻 疹 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第二节 | 水痘 - 带状疱疹病毒",
+        "name": "第二节 | 水痘 - 带状疱疹病毒",
+        "val": 10,
+        "type": "merged",
+        "source": "04",
+        "books": [
+          "04 医学微生物学"
+        ],
+        "essence": "语义相似度 0.88：「第二节 | 水痘 - 带状疱疹病毒」↔「疾病」",
+        "reasoning": "语义相似度 0.88：「第二节 | 水痘 - 带状疱疹病毒」↔「疾病」",
+        "decisionId": "decision_01483",
+        "confidence": 0.884
+      },
+      {
+        "id": "第六节 | 细菌性痢疾",
+        "name": "第六节 | 细菌性痢疾",
         "val": 10,
         "type": "merged",
         "source": "06",
         "books": [
           "06 传染病学"
         ],
-        "essence": "语义相似度 0.75（待确认）：「第十一节 | 炭 疽」↔「主要」",
-        "reasoning": "语义相似度 0.75（待确认）：「第十一节 | 炭 疽」↔「主要」",
-        "decisionId": "decision_02825",
-        "confidence": 0.751
+        "essence": "语义相似度 0.81（待确认）：「第六节 | 细菌性痢疾」↔「以及」",
+        "reasoning": "语义相似度 0.81（待确认）：「第六节 | 细菌性痢疾」↔「以及」",
+        "decisionId": "decision_02824",
+        "confidence": 0.815
       },
       {
         "id": "第九节 | 传染性单核细胞增多症",
@@ -954,32 +618,214 @@
         "confidence": 0.863
       },
       {
-        "id": "第二节 肩部207",
-        "name": "第二节 肩部207",
+        "id": "第八节 | 临床病例分析",
+        "name": "第八节 | 临床病例分析",
+        "val": 10,
+        "type": "single",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "第八节 | 临床病例分析 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第五节 | 沙门菌感染",
+        "name": "第五节 | 沙门菌感染",
+        "val": 10,
+        "type": "single",
+        "source": "06",
+        "books": [
+          "06 传染病学"
+        ],
+        "essence": "第五节 | 沙门菌感染 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第十一节 | 生物芯片技术",
+        "name": "第十一节 | 生物芯片技术",
+        "val": 10,
+        "type": "merged",
+        "source": "05",
+        "books": [
+          "05 病理学"
+        ],
+        "essence": "语义相似度 0.83（待确认）：「第十一节 | 生物芯片技术」↔「主要」",
+        "reasoning": "语义相似度 0.83（待确认）：「第十一节 | 生物芯片技术」↔「主要」",
+        "decisionId": "decision_02469",
+        "confidence": 0.83
+      },
+      {
+        "id": "第二节 臀部244",
+        "name": "第二节 臀部244",
+        "val": 10,
+        "type": "single",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "第二节 臀部244 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第八节 | 肝硬化",
+        "name": "第八节 | 肝硬化",
+        "val": 10,
+        "type": "merged",
+        "source": "05",
+        "books": [
+          "05 病理学"
+        ],
+        "essence": "语义相似度 0.79（待确认）：「第八节 | 肝硬化」↔「主要」",
+        "reasoning": "语义相似度 0.79（待确认）：「第八节 | 肝硬化」↔「主要」",
+        "decisionId": "decision_02391",
+        "confidence": 0.79
+      },
+      {
+        "id": "第五节 颈外侧区56",
+        "name": "第五节 颈外侧区56",
         "val": 10,
         "type": "merged",
         "source": "01",
         "books": [
           "01 局部解剖学"
         ],
-        "essence": "语义相似度 0.82（待确认）：「第二节 肩部207」↔「动脉」",
-        "reasoning": "语义相似度 0.82（待确认）：「第二节 肩部207」↔「动脉」",
-        "decisionId": "decision_00097",
-        "confidence": 0.819
+        "essence": "语义相似度 0.84（待确认）：「第五节 颈外侧区56」↔「淋巴」",
+        "reasoning": "语义相似度 0.84（待确认）：「第五节 颈外侧区56」↔「淋巴」",
+        "decisionId": "decision_00176",
+        "confidence": 0.836
       },
       {
-        "id": "第二节 | 肠道病毒感染",
-        "name": "第二节 | 肠道病毒感染",
+        "id": "第三节 会阴172",
+        "name": "第三节 会阴172",
+        "val": 10,
+        "type": "single",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "第三节 会阴172 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第六节 | 病毒性肝炎",
+        "name": "第六节 | 病毒性肝炎",
+        "val": 10,
+        "type": "merged",
+        "source": "05",
+        "books": [
+          "05 病理学"
+        ],
+        "essence": "语义相似度 0.82（待确认）：「第六节 | 病毒性肝炎」↔「主要」",
+        "reasoning": "语义相似度 0.82（待确认）：「第六节 | 病毒性肝炎」↔「主要」",
+        "decisionId": "decision_02392",
+        "confidence": 0.82
+      },
+      {
+        "id": "第四节 | 肿瘤的生长和扩散",
+        "name": "第四节 | 肿瘤的生长和扩散",
+        "val": 10,
+        "type": "merged",
+        "source": "05",
+        "books": [
+          "05 病理学"
+        ],
+        "essence": "语义相似度 0.87（待确认）：「第四节 | 肿瘤的生长和扩散」↔「主要」",
+        "reasoning": "语义相似度 0.87（待确认）：「第四节 | 肿瘤的生长和扩散」↔「主要」",
+        "decisionId": "decision_02360",
+        "confidence": 0.867
+      },
+      {
+        "id": "第六节 腹部解剖操作144",
+        "name": "第六节 腹部解剖操作144",
+        "val": 10,
+        "type": "single",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "第六节 腹部解剖操作144 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第二节 | 盆 部",
+        "name": "第二节 | 盆 部",
+        "val": 10,
+        "type": "merged",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "语义相似度 0.79（待确认）：「第二节 | 盆 部」↔「主要」",
+        "reasoning": "语义相似度 0.79（待确认）：「第二节 | 盆 部」↔「主要」",
+        "decisionId": "decision_00228",
+        "confidence": 0.792
+      },
+      {
+        "id": "第三节 | 动脉瘤",
+        "name": "第三节 | 动脉瘤",
+        "val": 10,
+        "type": "merged",
+        "source": "05",
+        "books": [
+          "05 病理学"
+        ],
+        "essence": "语义相似度 0.78（待确认）：「第三节 | 动脉瘤」↔「病因」",
+        "reasoning": "语义相似度 0.78（待确认）：「第三节 | 动脉瘤」↔「病因」",
+        "decisionId": "decision_02261",
+        "confidence": 0.775
+      },
+      {
+        "id": "第三节 | 假单胞菌属",
+        "name": "第三节 | 假单胞菌属",
+        "val": 10,
+        "type": "merged",
+        "source": "04",
+        "books": [
+          "04 医学微生物学"
+        ],
+        "essence": "语义相似度 0.83（待确认）：「第三节 | 假单胞菌属」↔「是一种」",
+        "reasoning": "语义相似度 0.83（待确认）：「第三节 | 假单胞菌属」↔「是一种」",
+        "decisionId": "decision_01732",
+        "confidence": 0.831
+      },
+      {
+        "id": "第五节 | 肿瘤的分级和分期",
+        "name": "第五节 | 肿瘤的分级和分期",
+        "val": 10,
+        "type": "merged",
+        "source": "05",
+        "books": [
+          "05 病理学"
+        ],
+        "essence": "语义相似度 0.83（待确认）：「第五节 | 肿瘤的分级和分期」↔「分化」",
+        "reasoning": "语义相似度 0.83（待确认）：「第五节 | 肿瘤的分级和分期」↔「分化」",
+        "decisionId": "decision_02340",
+        "confidence": 0.829
+      },
+      {
+        "id": "第二节 | 流行性脑脊髓膜炎",
+        "name": "第二节 | 流行性脑脊髓膜炎",
         "val": 10,
         "type": "merged",
         "source": "06",
         "books": [
           "06 传染病学"
         ],
-        "essence": "语义相似度 0.77（待确认）：「第二节 | 肠道病毒感染」↔「健康」",
-        "reasoning": "语义相似度 0.77（待确认）：「第二节 | 肠道病毒感染」↔「健康」",
-        "decisionId": "decision_02747",
-        "confidence": 0.766
+        "essence": "语义相似度 0.75（待确认）：「第二节 | 流行性脑脊髓膜炎」↔「主要」",
+        "reasoning": "语义相似度 0.75（待确认）：「第二节 | 流行性脑脊髓膜炎」↔「主要」",
+        "decisionId": "decision_02820",
+        "confidence": 0.75
       },
       {
         "id": "第五节 小腿部256",
@@ -1010,211 +856,15 @@
         "confidence": 0.865
       },
       {
-        "id": "第五节 | 激光扫描共聚焦显微技术和超分辨显微成像技术",
-        "name": "第五节 | 激光扫描共聚焦显微技术和超分辨显微成像技术",
-        "val": 10,
-        "type": "merged",
-        "source": "05",
-        "books": [
-          "05 病理学"
-        ],
-        "essence": "语义相似度 0.93：「第五节 | 激光扫描共聚焦显微技术和超分辨显微成像技术」↔「主要」",
-        "reasoning": "语义相似度 0.93：「第五节 | 激光扫描共聚焦显微技术和超分辨显微成像技术」↔「主要」",
-        "decisionId": "decision_02465",
-        "confidence": 0.93
-      },
-      {
-        "id": "第二节 胸壁64",
-        "name": "第二节 胸壁64",
+        "id": "第四节 结肠下区128",
+        "name": "第四节 结肠下区128",
         "val": 10,
         "type": "single",
         "source": "01",
         "books": [
           "01 局部解剖学"
         ],
-        "essence": "第二节 胸壁64 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
-        "id": "第三节 | 白 喉",
-        "name": "第三节 | 白 喉",
-        "val": 10,
-        "type": "merged",
-        "source": "06",
-        "books": [
-          "06 传染病学"
-        ],
-        "essence": "语义相似度 0.74（待确认）：「第三节 | 白 喉」↔「主要」",
-        "reasoning": "语义相似度 0.74（待确认）：「第三节 | 白 喉」↔「主要」",
-        "decisionId": "decision_02810",
-        "confidence": 0.736
-      },
-      {
-        "id": "第二节 | 诺卡菌属",
-        "name": "第二节 | 诺卡菌属",
-        "val": 10,
-        "type": "merged",
-        "source": "04",
-        "books": [
-          "04 医学微生物学"
-        ],
-        "essence": "语义相似度 0.78（待确认）：「第二节 | 诺卡菌属」↔「形成」",
-        "reasoning": "语义相似度 0.78（待确认）：「第二节 | 诺卡菌属」↔「形成」",
-        "decisionId": "decision_02036",
-        "confidence": 0.78
-      },
-      {
-        "id": "第一节 | 脊髓灰质炎病毒",
-        "name": "第一节 | 脊髓灰质炎病毒",
-        "val": 10,
-        "type": "merged",
-        "source": "04",
-        "books": [
-          "04 医学微生物学"
-        ],
-        "essence": "语义相似度 0.85（待确认）：「第一节 | 脊髓灰质炎病毒」↔「疾病」",
-        "reasoning": "语义相似度 0.85（待确认）：「第一节 | 脊髓灰质炎病毒」↔「疾病」",
-        "decisionId": "decision_01659",
-        "confidence": 0.85
-      },
-      {
-        "id": "第四节 | 肿瘤的生长和扩散",
-        "name": "第四节 | 肿瘤的生长和扩散",
-        "val": 10,
-        "type": "merged",
-        "source": "05",
-        "books": [
-          "05 病理学"
-        ],
-        "essence": "语义相似度 0.87（待确认）：「第四节 | 肿瘤的生长和扩散」↔「主要」",
-        "reasoning": "语义相似度 0.87（待确认）：「第四节 | 肿瘤的生长和扩散」↔「主要」",
-        "decisionId": "decision_02360",
-        "confidence": 0.867
-      },
-      {
-        "id": "第六节 颈部解剖操作58",
-        "name": "第六节 颈部解剖操作58",
-        "val": 10,
-        "type": "single",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "第六节 颈部解剖操作58 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
-        "id": "第六节 踝部和足部259",
-        "name": "第六节 踝部和足部259",
-        "val": 10,
-        "type": "merged",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "语义相似度 0.75（待确认）：「第六节 踝部和足部259」↔「静脉」",
-        "reasoning": "语义相似度 0.75（待确认）：「第六节 踝部和足部259」↔「静脉」",
-        "decisionId": "decision_00259",
-        "confidence": 0.751
-      },
-      {
-        "id": "第三节 | 臂 部",
-        "name": "第三节 | 臂 部",
-        "val": 10,
-        "type": "merged",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "语义相似度 0.78（待确认）：「第三节 | 臂 部」↔「静脉」",
-        "reasoning": "语义相似度 0.78（待确认）：「第三节 | 臂 部」↔「静脉」",
-        "decisionId": "decision_00108",
-        "confidence": 0.784
-      },
-      {
-        "id": "第十一节 | 生物芯片技术",
-        "name": "第十一节 | 生物芯片技术",
-        "val": 10,
-        "type": "merged",
-        "source": "05",
-        "books": [
-          "05 病理学"
-        ],
-        "essence": "语义相似度 0.83（待确认）：「第十一节 | 生物芯片技术」↔「主要」",
-        "reasoning": "语义相似度 0.83（待确认）：「第十一节 | 生物芯片技术」↔「主要」",
-        "decisionId": "decision_02469",
-        "confidence": 0.83
-      },
-      {
-        "id": "第二节 | 盆 部",
-        "name": "第二节 | 盆 部",
-        "val": 10,
-        "type": "merged",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "语义相似度 0.79（待确认）：「第二节 | 盆 部」↔「主要」",
-        "reasoning": "语义相似度 0.79（待确认）：「第二节 | 盆 部」↔「主要」",
-        "decisionId": "decision_00228",
-        "confidence": 0.792
-      },
-      {
-        "id": "第五节 | 腹膜后间隙",
-        "name": "第五节 | 腹膜后间隙",
-        "val": 10,
-        "type": "merged",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "语义相似度 0.85（待确认）：「第五节 | 腹膜后间隙」↔「淋巴」",
-        "reasoning": "语义相似度 0.85（待确认）：「第五节 | 腹膜后间隙」↔「淋巴」",
-        "decisionId": "decision_00327",
-        "confidence": 0.847
-      },
-      {
-        "id": "第二节 盆部154",
-        "name": "第二节 盆部154",
-        "val": 10,
-        "type": "merged",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "语义相似度 0.81（待确认）：「第二节 盆部154」↔「淋巴」",
-        "reasoning": "语义相似度 0.81（待确认）：「第二节 盆部154」↔「淋巴」",
-        "decisionId": "decision_00215",
-        "confidence": 0.808
-      },
-      {
-        "id": "第三节 会阴172",
-        "name": "第三节 会阴172",
-        "val": 10,
-        "type": "single",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "第三节 会阴172 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
-        "id": "第五节 | 麻 疹",
-        "name": "第五节 | 麻 疹",
-        "val": 10,
-        "type": "single",
-        "source": "06",
-        "books": [
-          "06 传染病学"
-        ],
-        "essence": "第五节 | 麻 疹 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "essence": "第四节 结肠下区128 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
         "reasoning": "由单本图谱与跨教材合并结果生成。",
         "decisionId": null,
         "confidence": null
@@ -1234,57 +884,211 @@
         "confidence": null
       },
       {
-        "id": "第六节 | 病毒性肝炎",
-        "name": "第六节 | 病毒性肝炎",
+        "id": "第五节 | 激光扫描共聚焦显微技术和超分辨显微成像技术",
+        "name": "第五节 | 激光扫描共聚焦显微技术和超分辨显微成像技术",
         "val": 10,
         "type": "merged",
         "source": "05",
         "books": [
           "05 病理学"
         ],
-        "essence": "语义相似度 0.82（待确认）：「第六节 | 病毒性肝炎」↔「主要」",
-        "reasoning": "语义相似度 0.82（待确认）：「第六节 | 病毒性肝炎」↔「主要」",
-        "decisionId": "decision_02392",
-        "confidence": 0.82
+        "essence": "语义相似度 0.93：「第五节 | 激光扫描共聚焦显微技术和超分辨显微成像技术」↔「主要」",
+        "reasoning": "语义相似度 0.93：「第五节 | 激光扫描共聚焦显微技术和超分辨显微成像技术」↔「主要」",
+        "decisionId": "decision_02465",
+        "confidence": 0.93
       },
       {
-        "id": "第九节 | 癌前病变和原位癌",
-        "name": "第九节 | 癌前病变和原位癌",
+        "id": "第五节 功能代谢变化的病理生理学基础190",
+        "name": "第五节 功能代谢变化的病理生理学基础190",
         "val": 10,
-        "type": "merged",
-        "source": "05",
+        "type": "single",
+        "source": "07",
         "books": [
-          "05 病理学"
+          "07 病理生理学"
         ],
-        "essence": "语义相似度 0.84（待确认）：「第九节 | 癌前病变和原位癌」↔「肿瘤」",
-        "reasoning": "语义相似度 0.84（待确认）：「第九节 | 癌前病变和原位癌」↔「肿瘤」",
-        "decisionId": "decision_02327",
-        "confidence": 0.845
+        "essence": "第五节 功能代谢变化的病理生理学基础190 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
       },
       {
-        "id": "第六节 | 细菌性痢疾",
-        "name": "第六节 | 细菌性痢疾",
+        "id": "第十一节 | 炭 疽",
+        "name": "第十一节 | 炭 疽",
         "val": 10,
         "type": "merged",
         "source": "06",
         "books": [
           "06 传染病学"
         ],
-        "essence": "语义相似度 0.81（待确认）：「第六节 | 细菌性痢疾」↔「以及」",
-        "reasoning": "语义相似度 0.81（待确认）：「第六节 | 细菌性痢疾」↔「以及」",
-        "decisionId": "decision_02824",
-        "confidence": 0.815
+        "essence": "语义相似度 0.75（待确认）：「第十一节 | 炭 疽」↔「主要」",
+        "reasoning": "语义相似度 0.75（待确认）：「第十一节 | 炭 疽」↔「主要」",
+        "decisionId": "decision_02825",
+        "confidence": 0.751
       },
       {
-        "id": "第三节 股部247",
-        "name": "第三节 股部247",
+        "id": "第八节 | 流行性腮腺炎",
+        "name": "第八节 | 流行性腮腺炎",
+        "val": 10,
+        "type": "merged",
+        "source": "06",
+        "books": [
+          "06 传染病学"
+        ],
+        "essence": "语义相似度 0.84（待确认）：「第八节 | 流行性腮腺炎」↔「主要」",
+        "reasoning": "语义相似度 0.84（待确认）：「第八节 | 流行性腮腺炎」↔「主要」",
+        "decisionId": "decision_02754",
+        "confidence": 0.843
+      },
+      {
+        "id": "第三节 | 白 喉",
+        "name": "第三节 | 白 喉",
+        "val": 10,
+        "type": "merged",
+        "source": "06",
+        "books": [
+          "06 传染病学"
+        ],
+        "essence": "语义相似度 0.74（待确认）：「第三节 | 白 喉」↔「主要」",
+        "reasoning": "语义相似度 0.74（待确认）：「第三节 | 白 喉」↔「主要」",
+        "decisionId": "decision_02810",
+        "confidence": 0.736
+      },
+      {
+        "id": "第七节 | 心肌病",
+        "name": "第七节 | 心肌病",
+        "val": 10,
+        "type": "merged",
+        "source": "05",
+        "books": [
+          "05 病理学"
+        ],
+        "essence": "语义相似度 0.84（待确认）：「第七节 | 心肌病」↔「主要」",
+        "reasoning": "语义相似度 0.84（待确认）：「第七节 | 心肌病」↔「主要」",
+        "decisionId": "decision_02258",
+        "confidence": 0.836
+      },
+      {
+        "id": "第三节 膈69",
+        "name": "第三节 膈69",
+        "val": 10,
+        "type": "merged",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "语义相似度 0.75（待确认）：「第三节 膈69」↔「淋巴」",
+        "reasoning": "语义相似度 0.75（待确认）：「第三节 膈69」↔「淋巴」",
+        "decisionId": "decision_00124",
+        "confidence": 0.753
+      },
+      {
+        "id": "第六节 | 风 疹",
+        "name": "第六节 | 风 疹",
+        "val": 10,
+        "type": "merged",
+        "source": "06",
+        "books": [
+          "06 传染病学"
+        ],
+        "essence": "语义相似度 0.80（待确认）：「第六节 | 风 疹」↔「主要」",
+        "reasoning": "语义相似度 0.80（待确认）：「第六节 | 风 疹」↔「主要」",
+        "decisionId": "decision_02755",
+        "confidence": 0.797
+      },
+      {
+        "id": "第九节 | 霍 乱",
+        "name": "第九节 | 霍 乱",
+        "val": 10,
+        "type": "merged",
+        "source": "06",
+        "books": [
+          "06 传染病学"
+        ],
+        "essence": "语义相似度 0.78（待确认）：「第九节 | 霍 乱」↔「病因」",
+        "reasoning": "语义相似度 0.78（待确认）：「第九节 | 霍 乱」↔「病因」",
+        "decisionId": "decision_02819",
+        "confidence": 0.778
+      },
+      {
+        "id": "第三节 | 颈前区",
+        "name": "第三节 | 颈前区",
+        "val": 10,
+        "type": "merged",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "语义相似度 0.71（待确认）：「第三节 | 颈前区」↔「疏松结缔组织」",
+        "reasoning": "语义相似度 0.71（待确认）：「第三节 | 颈前区」↔「疏松结缔组织」",
+        "decisionId": "decision_00191",
+        "confidence": 0.714
+      },
+      {
+        "id": "第六节 颈部解剖操作58",
+        "name": "第六节 颈部解剖操作58",
         "val": 10,
         "type": "single",
         "source": "01",
         "books": [
           "01 局部解剖学"
         ],
-        "essence": "第三节 股部247 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "essence": "第六节 颈部解剖操作58 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第五节 腹膜后间隙135",
+        "name": "第五节 腹膜后间隙135",
+        "val": 10,
+        "type": "merged",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "语义相似度 0.80（待确认）：「第五节 腹膜后间隙135」↔「动脉」",
+        "reasoning": "语义相似度 0.80（待确认）：「第五节 腹膜后间隙135」↔「动脉」",
+        "decisionId": "decision_00310",
+        "confidence": 0.805
+      },
+      {
+        "id": "第二节 肩部207",
+        "name": "第二节 肩部207",
+        "val": 10,
+        "type": "merged",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "语义相似度 0.82（待确认）：「第二节 肩部207」↔「动脉」",
+        "reasoning": "语义相似度 0.82（待确认）：「第二节 肩部207」↔「动脉」",
+        "decisionId": "decision_00097",
+        "confidence": 0.819
+      },
+      {
+        "id": "第五节 | 非特异性肠炎",
+        "name": "第五节 | 非特异性肠炎",
+        "val": 10,
+        "type": "merged",
+        "source": "05",
+        "books": [
+          "05 病理学"
+        ],
+        "essence": "语义相似度 0.85（待确认）：「第五节 | 非特异性肠炎」↔「病原」",
+        "reasoning": "语义相似度 0.85（待确认）：「第五节 | 非特异性肠炎」↔「病原」",
+        "decisionId": "decision_02389",
+        "confidence": 0.852
+      },
+      {
+        "id": "第六节 防治的病理生理学基础192",
+        "name": "第六节 防治的病理生理学基础192",
+        "val": 10,
+        "type": "single",
+        "source": "07",
+        "books": [
+          "07 病理生理学"
+        ],
+        "essence": "第六节 防治的病理生理学基础192 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
         "reasoning": "由单本图谱与跨教材合并结果生成。",
         "decisionId": null,
         "confidence": null
@@ -1304,48 +1108,6 @@
         "confidence": 0.809
       },
       {
-        "id": "第八节 | 肝硬化",
-        "name": "第八节 | 肝硬化",
-        "val": 10,
-        "type": "merged",
-        "source": "05",
-        "books": [
-          "05 病理学"
-        ],
-        "essence": "语义相似度 0.79（待确认）：「第八节 | 肝硬化」↔「主要」",
-        "reasoning": "语义相似度 0.79（待确认）：「第八节 | 肝硬化」↔「主要」",
-        "decisionId": "decision_02391",
-        "confidence": 0.79
-      },
-      {
-        "id": "第四节 胸锁乳突肌区和颈根部52",
-        "name": "第四节 胸锁乳突肌区和颈根部52",
-        "val": 10,
-        "type": "merged",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "语义相似度 0.80（待确认）：「第四节 胸锁乳突肌区和颈根部52」↔「软骨」",
-        "reasoning": "语义相似度 0.80（待确认）：「第四节 胸锁乳突肌区和颈根部52」↔「软骨」",
-        "decisionId": "decision_00186",
-        "confidence": 0.802
-      },
-      {
-        "id": "第三节 | 肠球菌属",
-        "name": "第三节 | 肠球菌属",
-        "val": 10,
-        "type": "merged",
-        "source": "04",
-        "books": [
-          "04 医学微生物学"
-        ],
-        "essence": "语义相似度 0.82（待确认）：「第三节 | 肠球菌属」↔「形成」",
-        "reasoning": "语义相似度 0.82（待确认）：「第三节 | 肠球菌属」↔「形成」",
-        "decisionId": "decision_01632",
-        "confidence": 0.824
-      },
-      {
         "id": "第十一章 弧菌属",
         "name": "第十一章 弧菌属",
         "val": 10,
@@ -1355,6 +1117,76 @@
           "04 医学微生物学"
         ],
         "essence": "第十一章 弧菌属 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第九节 | 癌前病变和原位癌",
+        "name": "第九节 | 癌前病变和原位癌",
+        "val": 10,
+        "type": "merged",
+        "source": "05",
+        "books": [
+          "05 病理学"
+        ],
+        "essence": "语义相似度 0.84（待确认）：「第九节 | 癌前病变和原位癌」↔「肿瘤」",
+        "reasoning": "语义相似度 0.84（待确认）：「第九节 | 癌前病变和原位癌」↔「肿瘤」",
+        "decisionId": "decision_02327",
+        "confidence": 0.845
+      },
+      {
+        "id": "第三节 | 会 阴",
+        "name": "第三节 | 会 阴",
+        "val": 10,
+        "type": "merged",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "语义相似度 0.75（待确认）：「第三节 | 会 阴」↔「阴道」",
+        "reasoning": "语义相似度 0.75（待确认）：「第三节 | 会 阴」↔「阴道」",
+        "decisionId": "decision_00227",
+        "confidence": 0.745
+      },
+      {
+        "id": "第三节 | 埃博拉病毒",
+        "name": "第三节 | 埃博拉病毒",
+        "val": 10,
+        "type": "merged",
+        "source": "04",
+        "books": [
+          "04 医学微生物学"
+        ],
+        "essence": "语义相似度 0.77（待确认）：「第三节 | 埃博拉病毒」↔「临床」",
+        "reasoning": "语义相似度 0.77（待确认）：「第三节 | 埃博拉病毒」↔「临床」",
+        "decisionId": "decision_01365",
+        "confidence": 0.765
+      },
+      {
+        "id": "第八节 | 心肌炎",
+        "name": "第八节 | 心肌炎",
+        "val": 10,
+        "type": "merged",
+        "source": "05",
+        "books": [
+          "05 病理学"
+        ],
+        "essence": "语义相似度 0.75（待确认）：「第八节 | 心肌炎」↔「鉴别」",
+        "reasoning": "语义相似度 0.75（待确认）：「第八节 | 心肌炎」↔「鉴别」",
+        "decisionId": "decision_02265",
+        "confidence": 0.75
+      },
+      {
+        "id": "第四节 发生发展机制187",
+        "name": "第四节 发生发展机制187",
+        "val": 10,
+        "type": "single",
+        "source": "07",
+        "books": [
+          "07 病理生理学"
+        ],
+        "essence": "第四节 发生发展机制187 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
         "reasoning": "由单本图谱与跨教材合并结果生成。",
         "decisionId": null,
         "confidence": null
@@ -1374,326 +1206,228 @@
         "confidence": null
       },
       {
-        "id": "第三节 | 埃博拉病毒",
-        "name": "第三节 | 埃博拉病毒",
+        "id": "第七节 胸部解剖操作86",
+        "name": "第七节 胸部解剖操作86",
+        "val": 10,
+        "type": "single",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "第七节 胸部解剖操作86 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第三节 | 人巨细胞病毒",
+        "name": "第三节 | 人巨细胞病毒",
         "val": 10,
         "type": "merged",
         "source": "04",
         "books": [
           "04 医学微生物学"
         ],
-        "essence": "语义相似度 0.77（待确认）：「第三节 | 埃博拉病毒」↔「临床」",
-        "reasoning": "语义相似度 0.77（待确认）：「第三节 | 埃博拉病毒」↔「临床」",
-        "decisionId": "decision_01365",
-        "confidence": 0.765
+        "essence": "语义相似度 0.82（待确认）：「第三节 | 人巨细胞病毒」↔「形成」",
+        "reasoning": "语义相似度 0.82（待确认）：「第三节 | 人巨细胞病毒」↔「形成」",
+        "decisionId": "decision_01470",
+        "confidence": 0.824
       },
       {
-        "id": "第三节 | 颈前区",
-        "name": "第三节 | 颈前区",
+        "id": "第四节 胸锁乳突肌区和颈根部52",
+        "name": "第四节 胸锁乳突肌区和颈根部52",
         "val": 10,
         "type": "merged",
         "source": "01",
         "books": [
           "01 局部解剖学"
         ],
-        "essence": "语义相似度 0.71（待确认）：「第三节 | 颈前区」↔「疏松结缔组织」",
-        "reasoning": "语义相似度 0.71（待确认）：「第三节 | 颈前区」↔「疏松结缔组织」",
-        "decisionId": "decision_00191",
-        "confidence": 0.714
+        "essence": "语义相似度 0.80（待确认）：「第四节 胸锁乳突肌区和颈根部52」↔「软骨」",
+        "reasoning": "语义相似度 0.80（待确认）：「第四节 胸锁乳突肌区和颈根部52」↔「软骨」",
+        "decisionId": "decision_00186",
+        "confidence": 0.802
       },
       {
-        "id": "第五节 | 肿瘤的分级和分期",
-        "name": "第五节 | 肿瘤的分级和分期",
-        "val": 10,
-        "type": "merged",
-        "source": "05",
-        "books": [
-          "05 病理学"
-        ],
-        "essence": "语义相似度 0.83（待确认）：「第五节 | 肿瘤的分级和分期」↔「分化」",
-        "reasoning": "语义相似度 0.83（待确认）：「第五节 | 肿瘤的分级和分期」↔「分化」",
-        "decisionId": "decision_02340",
-        "confidence": 0.829
-      },
-      {
-        "id": "第三节 臂部214",
-        "name": "第三节 臂部214",
+        "id": "第二节 | 颈部的层次结构",
+        "name": "第二节 | 颈部的层次结构",
         "val": 10,
         "type": "single",
         "source": "01",
         "books": [
           "01 局部解剖学"
         ],
-        "essence": "第三节 臂部214 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "essence": "第二节 | 颈部的层次结构 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
         "reasoning": "由单本图谱与跨教材合并结果生成。",
         "decisionId": null,
         "confidence": null
       },
       {
-        "id": "第二节 | 克里米亚 - 刚果出血热病毒",
-        "name": "第二节 | 克里米亚 - 刚果出血热病毒",
-        "val": 9,
-        "type": "merged",
-        "source": "04",
-        "books": [
-          "04 医学微生物学"
-        ],
-        "essence": "语义相似度 0.87（待确认）：「第二节 | 克里米亚 - 刚果出血热病毒」↔「命名」",
-        "reasoning": "语义相似度 0.87（待确认）：「第二节 | 克里米亚 - 刚果出血热病毒」↔「命名」",
-        "decisionId": "decision_01373",
-        "confidence": 0.87
-      },
-      {
-        "id": "第四节 胸膜和胸膜腔70",
-        "name": "第四节 胸膜和胸膜腔70",
-        "val": 9,
-        "type": "merged",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "语义相似度 0.87（待确认）：「第四节 胸膜和胸膜腔70」↔「淋巴」",
-        "reasoning": "语义相似度 0.87（待确认）：「第四节 胸膜和胸膜腔70」↔「淋巴」",
-        "decisionId": "decision_00139",
-        "confidence": 0.867
-      },
-      {
-        "id": "第四节 肘部217",
-        "name": "第四节 肘部217",
-        "val": 9,
-        "type": "merged",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "语义相似度 0.85（待确认）：「第四节 肘部217」↔「动脉」",
-        "reasoning": "语义相似度 0.85（待确认）：「第四节 肘部217」↔「动脉」",
-        "decisionId": "decision_00102",
-        "confidence": 0.849
-      },
-      {
-        "id": "第九节 | 心包炎",
-        "name": "第九节 | 心包炎",
-        "val": 9,
-        "type": "merged",
-        "source": "05",
-        "books": [
-          "05 病理学"
-        ],
-        "essence": "语义相似度 0.76（待确认）：「第九节 | 心包炎」↔「主要」",
-        "reasoning": "语义相似度 0.76（待确认）：「第九节 | 心包炎」↔「主要」",
-        "decisionId": "decision_02262",
-        "confidence": 0.764
-      },
-      {
-        "id": "第五节 前臂部219",
-        "name": "第五节 前臂部219",
-        "val": 9,
-        "type": "single",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "第五节 前臂部219 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
-        "id": "第二十二章其他细菌",
-        "name": "第二十二章其他细菌",
-        "val": 9,
-        "type": "single",
-        "source": "04",
-        "books": [
-          "04 医学微生物学"
-        ],
-        "essence": "第二十二章其他细菌 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
-        "id": "第五章衰老与疾病",
-        "name": "第五章衰老与疾病",
-        "val": 9,
-        "type": "single",
-        "source": "07",
-        "books": [
-          "07 病理生理学"
-        ],
-        "essence": "第五章衰老与疾病 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
-        "id": "第三节 衰老对机体的影响47",
-        "name": "第三节 衰老对机体的影响47",
-        "val": 9,
-        "type": "single",
-        "source": "07",
-        "books": [
-          "07 病理生理学"
-        ],
-        "essence": "第三节 衰老对机体的影响47 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
-        "id": "第二节 | 肩 部",
-        "name": "第二节 | 肩 部",
-        "val": 9,
-        "type": "merged",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "语义相似度 0.73（待确认）：「第二节 | 肩 部」↔「出现」",
-        "reasoning": "语义相似度 0.73（待确认）：「第二节 | 肩 部」↔「出现」",
-        "decisionId": "decision_00109",
-        "confidence": 0.728
-      },
-      {
-        "id": "第八节 | 常见肿瘤举例",
-        "name": "第八节 | 常见肿瘤举例",
-        "val": 9,
-        "type": "merged",
-        "source": "05",
-        "books": [
-          "05 病理学"
-        ],
-        "essence": "语义相似度 0.84（待确认）：「第八节 | 常见肿瘤举例」↔「肿瘤」",
-        "reasoning": "语义相似度 0.84（待确认）：「第八节 | 常见肿瘤举例」↔「肿瘤」",
-        "decisionId": "decision_02344",
-        "confidence": 0.84
-      },
-      {
-        "id": "第一节 概述205",
-        "name": "第一节 概述205",
-        "val": 9,
-        "type": "merged",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "语义相似度 0.80（待确认）：「第一节 概述205」↔「概述」",
-        "reasoning": "语义相似度 0.80（待确认）：「第一节 概述205」↔「概述」",
-        "decisionId": "decision_00091",
-        "confidence": 0.796
-      },
-      {
-        "id": "第六节 纵隔75",
-        "name": "第六节 纵隔75",
-        "val": 9,
-        "type": "merged",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "语义相似度 0.75（待确认）：「第六节 纵隔75」↔「淋巴」",
-        "reasoning": "语义相似度 0.75（待确认）：「第六节 纵隔75」↔「淋巴」",
-        "decisionId": "decision_00133",
-        "confidence": 0.753
-      },
-      {
-        "id": "第十节 | 先天性心脏病",
-        "name": "第十节 | 先天性心脏病",
-        "val": 9,
-        "type": "merged",
-        "source": "05",
-        "books": [
-          "05 病理学"
-        ],
-        "essence": "语义相似度 0.84（待确认）：「第十节 | 先天性心脏病」↔「治疗」",
-        "reasoning": "语义相似度 0.84（待确认）：「第十节 | 先天性心脏病」↔「治疗」",
-        "decisionId": "decision_02273",
-        "confidence": 0.837
-      },
-      {
-        "id": "第十三节 | 结核病",
-        "name": "第十三节 | 结核病",
-        "val": 9,
+        "id": "第三节 | 流行性感冒病毒感染",
+        "name": "第三节 | 流行性感冒病毒感染",
+        "val": 10,
         "type": "merged",
         "source": "06",
         "books": [
           "06 传染病学"
         ],
-        "essence": "语义相似度 0.74（待确认）：「第十三节 | 结核病」↔「主要」",
-        "reasoning": "语义相似度 0.74（待确认）：「第十三节 | 结核病」↔「主要」",
-        "decisionId": "decision_02826",
-        "confidence": 0.744
+        "essence": "语义相似度 0.89：「第三节 | 流行性感冒病毒感染」↔「主要」",
+        "reasoning": "语义相似度 0.89：「第三节 | 流行性感冒病毒感染」↔「主要」",
+        "decisionId": "decision_02744",
+        "confidence": 0.89
       },
       {
-        "id": "第五节 | 功能代谢变化的病理生理学基础",
-        "name": "第五节 | 功能代谢变化的病理生理学基础",
-        "val": 9,
-        "type": "single",
-        "source": "07",
+        "id": "第二节 盆部154",
+        "name": "第二节 盆部154",
+        "val": 10,
+        "type": "merged",
+        "source": "01",
         "books": [
-          "07 病理生理学"
+          "01 局部解剖学"
         ],
-        "essence": "第五节 | 功能代谢变化的病理生理学基础 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "essence": "语义相似度 0.81（待确认）：「第二节 盆部154」↔「淋巴」",
+        "reasoning": "语义相似度 0.81（待确认）：「第二节 盆部154」↔「淋巴」",
+        "decisionId": "decision_00215",
+        "confidence": 0.808
+      },
+      {
+        "id": "第一节 | 脊髓灰质炎病毒",
+        "name": "第一节 | 脊髓灰质炎病毒",
+        "val": 10,
+        "type": "merged",
+        "source": "04",
+        "books": [
+          "04 医学微生物学"
+        ],
+        "essence": "语义相似度 0.85（待确认）：「第一节 | 脊髓灰质炎病毒」↔「疾病」",
+        "reasoning": "语义相似度 0.85（待确认）：「第一节 | 脊髓灰质炎病毒」↔「疾病」",
+        "decisionId": "decision_01659",
+        "confidence": 0.85
+      },
+      {
+        "id": "第三节 | 臂 部",
+        "name": "第三节 | 臂 部",
+        "val": 10,
+        "type": "merged",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "语义相似度 0.78（待确认）：「第三节 | 臂 部」↔「静脉」",
+        "reasoning": "语义相似度 0.78（待确认）：「第三节 | 臂 部」↔「静脉」",
+        "decisionId": "decision_00108",
+        "confidence": 0.784
+      },
+      {
+        "id": "第二节 胸壁64",
+        "name": "第二节 胸壁64",
+        "val": 10,
+        "type": "single",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "第二节 胸壁64 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
         "reasoning": "由单本图谱与跨教材合并结果生成。",
         "decisionId": null,
         "confidence": null
       },
       {
-        "id": "第六节 | 心瓣膜病",
-        "name": "第六节 | 心瓣膜病",
-        "val": 9,
+        "id": "第二节 腹前外侧壁94",
+        "name": "第二节 腹前外侧壁94",
+        "val": 10,
+        "type": "merged",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "语义相似度 0.83（待确认）：「第二节 腹前外侧壁94」↔「睾丸」",
+        "reasoning": "语义相似度 0.83（待确认）：「第二节 腹前外侧壁94」↔「睾丸」",
+        "decisionId": "decision_00305",
+        "confidence": 0.826
+      },
+      {
+        "id": "第三节 股部247",
+        "name": "第三节 股部247",
+        "val": 10,
+        "type": "single",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "第三节 股部247 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第二节 | 诺卡菌属",
+        "name": "第二节 | 诺卡菌属",
+        "val": 10,
+        "type": "merged",
+        "source": "04",
+        "books": [
+          "04 医学微生物学"
+        ],
+        "essence": "语义相似度 0.78（待确认）：「第二节 | 诺卡菌属」↔「形成」",
+        "reasoning": "语义相似度 0.78（待确认）：「第二节 | 诺卡菌属」↔「形成」",
+        "decisionId": "decision_02036",
+        "confidence": 0.78
+      },
+      {
+        "id": "第八节 临床病例分析268",
+        "name": "第八节 临床病例分析268",
+        "val": 10,
+        "type": "single",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "第八节 临床病例分析268 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第二节 颈部的层次结构41",
+        "name": "第二节 颈部的层次结构41",
+        "val": 10,
+        "type": "single",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "第二节 颈部的层次结构41 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第七节 上肢的解剖操作232",
+        "name": "第七节 上肢的解剖操作232",
+        "val": 10,
+        "type": "single",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "第七节 上肢的解剖操作232 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第二节 | 组织化学和免疫组织（细胞）化学技术",
+        "name": "第二节 | 组织化学和免疫组织（细胞）化学技术",
+        "val": 10,
         "type": "merged",
         "source": "05",
         "books": [
           "05 病理学"
         ],
-        "essence": "语义相似度 0.84（待确认）：「第六节 | 心瓣膜病」↔「主要」",
-        "reasoning": "语义相似度 0.84（待确认）：「第六节 | 心瓣膜病」↔「主要」",
-        "decisionId": "decision_02268",
-        "confidence": 0.837
-      },
-      {
-        "id": "第六章脊柱区",
-        "name": "第六章脊柱区",
-        "val": 9,
-        "type": "merged",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "语义相似度 0.74（待确认）：「第六章脊柱区」↔「疏松结缔组织」",
-        "reasoning": "语义相似度 0.74（待确认）：「第六章脊柱区」↔「疏松结缔组织」",
-        "decisionId": "decision_00274",
-        "confidence": 0.742
-      },
-      {
-        "id": "第五节 肺72",
-        "name": "第五节 肺72",
-        "val": 9,
-        "type": "merged",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "语义相似度 0.83（待确认）：「第五节 肺72」↔「淋巴」",
-        "reasoning": "语义相似度 0.83（待确认）：「第五节 肺72」↔「淋巴」",
-        "decisionId": "decision_00129",
-        "confidence": 0.831
-      },
-      {
-        "id": "第五节 会阴解剖操作182",
-        "name": "第五节 会阴解剖操作182",
-        "val": 9,
-        "type": "single",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "第五节 会阴解剖操作182 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
+        "essence": "语义相似度 0.87（待确认）：「第二节 | 组织化学和免疫组织（细胞）化学技术」↔「不仅」",
+        "reasoning": "语义相似度 0.87（待确认）：「第二节 | 组织化学和免疫组织（细胞）化学技术」↔「不仅」",
+        "decisionId": "decision_02464",
+        "confidence": 0.874
       },
       {
         "id": "第一节 概述243",
@@ -1710,74 +1444,32 @@
         "confidence": 0.736
       },
       {
-        "id": "第十三节 | 转录组测序技术",
-        "name": "第十三节 | 转录组测序技术",
-        "val": 9,
-        "type": "merged",
-        "source": "05",
-        "books": [
-          "05 病理学"
-        ],
-        "essence": "语义相似度 0.82（待确认）：「第十三节 | 转录组测序技术」↔「分化」",
-        "reasoning": "语义相似度 0.82（待确认）：「第十三节 | 转录组测序技术」↔「分化」",
-        "decisionId": "decision_02474",
-        "confidence": 0.816
-      },
-      {
-        "id": "第三节 | 肿瘤的命名与分类",
-        "name": "第三节 | 肿瘤的命名与分类",
-        "val": 9,
-        "type": "merged",
-        "source": "05",
-        "books": [
-          "05 病理学"
-        ],
-        "essence": "语义相似度 0.85（待确认）：「第三节 | 肿瘤的命名与分类」↔「分化」",
-        "reasoning": "语义相似度 0.85（待确认）：「第三节 | 肿瘤的命名与分类」↔「分化」",
-        "decisionId": "decision_02326",
-        "confidence": 0.852
-      },
-      {
-        "id": "第三节 | 脊柱区解剖操作",
-        "name": "第三节 | 脊柱区解剖操作",
+        "id": "第六章脊柱区",
+        "name": "第六章脊柱区",
         "val": 9,
         "type": "merged",
         "source": "01",
         "books": [
           "01 局部解剖学"
         ],
-        "essence": "互补发现：「第一节 | 概 述」在《04_医学微生物学》中缺少关联「第三节 | 脊柱区解剖操作」（《01_局部解剖学》中存在此关系）",
-        "reasoning": "互补发现：「第一节 | 概 述」在《04_医学微生物学》中缺少关联「第三节 | 脊柱区解剖操作」（《01_局部解剖学》中存在此关系）",
-        "decisionId": "decision_02923",
-        "confidence": 0.7
+        "essence": "语义相似度 0.74（待确认）：「第六章脊柱区」↔「疏松结缔组织」",
+        "reasoning": "语义相似度 0.74（待确认）：「第六章脊柱区」↔「疏松结缔组织」",
+        "decisionId": "decision_00274",
+        "confidence": 0.742
       },
       {
-        "id": "第四节 膝部254",
-        "name": "第四节 膝部254",
+        "id": "第二节 | 肩 部",
+        "name": "第二节 | 肩 部",
         "val": 9,
         "type": "merged",
         "source": "01",
         "books": [
           "01 局部解剖学"
         ],
-        "essence": "语义相似度 0.86（待确认）：「第四节 膝部254」↔「动脉」",
-        "reasoning": "语义相似度 0.86（待确认）：「第四节 膝部254」↔「动脉」",
-        "decisionId": "decision_00261",
-        "confidence": 0.865
-      },
-      {
-        "id": "第五节 | 颈外侧区",
-        "name": "第五节 | 颈外侧区",
-        "val": 9,
-        "type": "merged",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "语义相似度 0.82（待确认）：「第五节 | 颈外侧区」↔「淋巴」",
-        "reasoning": "语义相似度 0.82（待确认）：「第五节 | 颈外侧区」↔「淋巴」",
-        "decisionId": "decision_00193",
-        "confidence": 0.819
+        "essence": "语义相似度 0.73（待确认）：「第二节 | 肩 部」↔「出现」",
+        "reasoning": "语义相似度 0.73（待确认）：「第二节 | 肩 部」↔「出现」",
+        "decisionId": "decision_00109",
+        "confidence": 0.728
       },
       {
         "id": "第一节 | 动脉粥样硬化",
@@ -1794,18 +1486,60 @@
         "confidence": 0.851
       },
       {
-        "id": "第一节 | 病因和诱因",
-        "name": "第一节 | 病因和诱因",
+        "id": "第九节 | 肝代谢性疾病与血液循环障碍",
+        "name": "第九节 | 肝代谢性疾病与血液循环障碍",
+        "val": 9,
+        "type": "merged",
+        "source": "05",
+        "books": [
+          "05 病理学"
+        ],
+        "essence": "语义相似度 0.83（待确认）：「第九节 | 肝代谢性疾病与血液循环障碍」↔「代谢障碍」",
+        "reasoning": "语义相似度 0.83（待确认）：「第九节 | 肝代谢性疾病与血液循环障碍」↔「代谢障碍」",
+        "decisionId": "decision_02382",
+        "confidence": 0.834
+      },
+      {
+        "id": "第七节 | 酒精性肝病和非酒精性脂肪性肝病",
+        "name": "第七节 | 酒精性肝病和非酒精性脂肪性肝病",
+        "val": 9,
+        "type": "merged",
+        "source": "05",
+        "books": [
+          "05 病理学"
+        ],
+        "essence": "语义相似度 0.91：「第七节 | 酒精性肝病和非酒精性脂肪性肝病」↔「主要」",
+        "reasoning": "语义相似度 0.91：「第七节 | 酒精性肝病和非酒精性脂肪性肝病」↔「主要」",
+        "decisionId": "decision_02379",
+        "confidence": 0.908
+      },
+      {
+        "id": "第五章衰老与疾病",
+        "name": "第五章衰老与疾病",
         "val": 9,
         "type": "single",
         "source": "07",
         "books": [
           "07 病理生理学"
         ],
-        "essence": "第一节 | 病因和诱因 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "essence": "第五章衰老与疾病 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
         "reasoning": "由单本图谱与跨教材合并结果生成。",
         "decisionId": null,
         "confidence": null
+      },
+      {
+        "id": "第十三节 | 结核病",
+        "name": "第十三节 | 结核病",
+        "val": 9,
+        "type": "merged",
+        "source": "06",
+        "books": [
+          "06 传染病学"
+        ],
+        "essence": "语义相似度 0.74（待确认）：「第十三节 | 结核病」↔「主要」",
+        "reasoning": "语义相似度 0.74（待确认）：「第十三节 | 结核病」↔「主要」",
+        "decisionId": "decision_02826",
+        "confidence": 0.744
       },
       {
         "id": "第十一节 | 流行性乙型脑炎",
@@ -1836,88 +1570,18 @@
         "confidence": 0.839
       },
       {
-        "id": "第九节 | 肝代谢性疾病与血液循环障碍",
-        "name": "第九节 | 肝代谢性疾病与血液循环障碍",
+        "id": "第三节 | 肿瘤的命名与分类",
+        "name": "第三节 | 肿瘤的命名与分类",
         "val": 9,
         "type": "merged",
         "source": "05",
         "books": [
           "05 病理学"
         ],
-        "essence": "语义相似度 0.83（待确认）：「第九节 | 肝代谢性疾病与血液循环障碍」↔「代谢障碍」",
-        "reasoning": "语义相似度 0.83（待确认）：「第九节 | 肝代谢性疾病与血液循环障碍」↔「代谢障碍」",
-        "decisionId": "decision_02382",
-        "confidence": 0.834
-      },
-      {
-        "id": "第十一节 | 胰腺炎",
-        "name": "第十一节 | 胰腺炎",
-        "val": 9,
-        "type": "single",
-        "source": "05",
-        "books": [
-          "05 病理学"
-        ],
-        "essence": "第十一节 | 胰腺炎 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
-        "id": "第二节 | 腹前外侧壁",
-        "name": "第二节 | 腹前外侧壁",
-        "val": 9,
-        "type": "merged",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "语义相似度 0.80（待确认）：「第二节 | 腹前外侧壁」↔「疏松结缔组织」",
-        "reasoning": "语义相似度 0.80（待确认）：「第二节 | 腹前外侧壁」↔「疏松结缔组织」",
-        "decisionId": "decision_00323",
-        "confidence": 0.799
-      },
-      {
-        "id": "第一节 | 食管的炎症、狭窄与扩张",
-        "name": "第一节 | 食管的炎症、狭窄与扩张",
-        "val": 9,
-        "type": "merged",
-        "source": "05",
-        "books": [
-          "05 病理学"
-        ],
-        "essence": "语义相似度 0.87（待确认）：「第一节 | 食管的炎症、狭窄与扩张」↔「病因」",
-        "reasoning": "语义相似度 0.87（待确认）：「第一节 | 食管的炎症、狭窄与扩张」↔「病因」",
-        "decisionId": "decision_02375",
-        "confidence": 0.868
-      },
-      {
-        "id": "第七节 | 水痘和带状疱疹",
-        "name": "第七节 | 水痘和带状疱疹",
-        "val": 9,
-        "type": "merged",
-        "source": "06",
-        "books": [
-          "06 传染病学"
-        ],
-        "essence": "语义相似度 0.89：「第七节 | 水痘和带状疱疹」↔「主要」",
-        "reasoning": "语义相似度 0.89：「第七节 | 水痘和带状疱疹」↔「主要」",
-        "decisionId": "decision_02743",
-        "confidence": 0.892
-      },
-      {
-        "id": "第三节 机体的代偿反应183",
-        "name": "第三节 机体的代偿反应183",
-        "val": 9,
-        "type": "single",
-        "source": "07",
-        "books": [
-          "07 病理生理学"
-        ],
-        "essence": "第三节 机体的代偿反应183 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
+        "essence": "语义相似度 0.85（待确认）：「第三节 | 肿瘤的命名与分类」↔「分化」",
+        "reasoning": "语义相似度 0.85（待确认）：「第三节 | 肿瘤的命名与分类」↔「分化」",
+        "decisionId": "decision_02326",
+        "confidence": 0.852
       },
       {
         "id": "第二节 | 分 类",
@@ -1934,32 +1598,32 @@
         "confidence": null
       },
       {
-        "id": "第五节 | 感染性心内膜炎",
-        "name": "第五节 | 感染性心内膜炎",
-        "val": 9,
-        "type": "merged",
-        "source": "05",
-        "books": [
-          "05 病理学"
-        ],
-        "essence": "语义相似度 0.86（待确认）：「第五节 | 感染性心内膜炎」↔「主要」",
-        "reasoning": "语义相似度 0.86（待确认）：「第五节 | 感染性心内膜炎」↔「主要」",
-        "decisionId": "decision_02264",
-        "confidence": 0.862
-      },
-      {
-        "id": "第一节 概述154",
-        "name": "第一节 概述154",
+        "id": "第五节 | 颈外侧区",
+        "name": "第五节 | 颈外侧区",
         "val": 9,
         "type": "merged",
         "source": "01",
         "books": [
           "01 局部解剖学"
         ],
-        "essence": "语义相似度 0.72（待确认）：「第一节 概述154」↔「概述」",
-        "reasoning": "语义相似度 0.72（待确认）：「第一节 概述154」↔「概述」",
-        "decisionId": "decision_00212",
-        "confidence": 0.723
+        "essence": "语义相似度 0.82（待确认）：「第五节 | 颈外侧区」↔「淋巴」",
+        "reasoning": "语义相似度 0.82（待确认）：「第五节 | 颈外侧区」↔「淋巴」",
+        "decisionId": "decision_00193",
+        "confidence": 0.819
+      },
+      {
+        "id": "第十节 | 先天性心脏病",
+        "name": "第十节 | 先天性心脏病",
+        "val": 9,
+        "type": "merged",
+        "source": "05",
+        "books": [
+          "05 病理学"
+        ],
+        "essence": "语义相似度 0.84（待确认）：「第十节 | 先天性心脏病」↔「治疗」",
+        "reasoning": "语义相似度 0.84（待确认）：「第十节 | 先天性心脏病」↔「治疗」",
+        "decisionId": "decision_02273",
+        "confidence": 0.837
       },
       {
         "id": "第三十五章 朊粒",
@@ -1976,32 +1640,130 @@
         "confidence": 0.744
       },
       {
-        "id": "第五节 | 会阴解剖操作",
-        "name": "第五节 | 会阴解剖操作",
+        "id": "第一节 概述63",
+        "name": "第一节 概述63",
         "val": 9,
         "type": "merged",
         "source": "01",
         "books": [
           "01 局部解剖学"
         ],
-        "essence": "语义相似度 0.84（待确认）：「第五节 | 会阴解剖操作」↔「阴茎」",
-        "reasoning": "语义相似度 0.84（待确认）：「第五节 | 会阴解剖操作」↔「阴茎」",
-        "decisionId": "decision_00231",
-        "confidence": 0.842
+        "essence": "语义相似度 0.77（待确认）：「第一节 概述63」↔「概述」",
+        "reasoning": "语义相似度 0.77（待确认）：「第一节 概述63」↔「概述」",
+        "decisionId": "decision_00120",
+        "confidence": 0.769
       },
       {
-        "id": "第十一章 消化系统疾病",
-        "name": "第十一章 消化系统疾病",
+        "id": "第四节 胸膜和胸膜腔70",
+        "name": "第四节 胸膜和胸膜腔70",
+        "val": 9,
+        "type": "merged",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "语义相似度 0.87（待确认）：「第四节 胸膜和胸膜腔70」↔「淋巴」",
+        "reasoning": "语义相似度 0.87（待确认）：「第四节 胸膜和胸膜腔70」↔「淋巴」",
+        "decisionId": "decision_00139",
+        "confidence": 0.867
+      },
+      {
+        "id": "第三节 | 脊柱区解剖操作",
+        "name": "第三节 | 脊柱区解剖操作",
+        "val": 9,
+        "type": "merged",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "互补发现：「第一节 | 概 述」在《04_医学微生物学》中缺少关联「第三节 | 脊柱区解剖操作」（《01_局部解剖学》中存在此关系）",
+        "reasoning": "互补发现：「第一节 | 概 述」在《04_医学微生物学》中缺少关联「第三节 | 脊柱区解剖操作」（《01_局部解剖学》中存在此关系）",
+        "decisionId": "decision_02923",
+        "confidence": 0.7
+      },
+      {
+        "id": "第五节 会阴解剖操作182",
+        "name": "第五节 会阴解剖操作182",
+        "val": 9,
+        "type": "single",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "第五节 会阴解剖操作182 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第五节 肺72",
+        "name": "第五节 肺72",
+        "val": 9,
+        "type": "merged",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "语义相似度 0.83（待确认）：「第五节 肺72」↔「淋巴」",
+        "reasoning": "语义相似度 0.83（待确认）：「第五节 肺72」↔「淋巴」",
+        "decisionId": "decision_00129",
+        "confidence": 0.831
+      },
+      {
+        "id": "第三节 结肠上区102",
+        "name": "第三节 结肠上区102",
+        "val": 9,
+        "type": "merged",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "语义相似度 0.83（待确认）：「第三节 结肠上区102」↔「静脉」",
+        "reasoning": "语义相似度 0.83（待确认）：「第三节 结肠上区102」↔「静脉」",
+        "decisionId": "decision_00299",
+        "confidence": 0.827
+      },
+      {
+        "id": "第九节 | 心包炎",
+        "name": "第九节 | 心包炎",
         "val": 9,
         "type": "merged",
         "source": "05",
         "books": [
           "05 病理学"
         ],
-        "essence": "语义相似度 0.72（待确认）：「第十一章 消化系统疾病」↔「主要」",
-        "reasoning": "语义相似度 0.72（待确认）：「第十一章 消化系统疾病」↔「主要」",
-        "decisionId": "decision_02369",
-        "confidence": 0.724
+        "essence": "语义相似度 0.76（待确认）：「第九节 | 心包炎」↔「主要」",
+        "reasoning": "语义相似度 0.76（待确认）：「第九节 | 心包炎」↔「主要」",
+        "decisionId": "decision_02262",
+        "confidence": 0.764
+      },
+      {
+        "id": "第一节 概述205",
+        "name": "第一节 概述205",
+        "val": 9,
+        "type": "merged",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "语义相似度 0.80（待确认）：「第一节 概述205」↔「概述」",
+        "reasoning": "语义相似度 0.80（待确认）：「第一节 概述205」↔「概述」",
+        "decisionId": "decision_00091",
+        "confidence": 0.796
+      },
+      {
+        "id": "第四节 膝部254",
+        "name": "第四节 膝部254",
+        "val": 9,
+        "type": "merged",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "语义相似度 0.86（待确认）：「第四节 膝部254」↔「动脉」",
+        "reasoning": "语义相似度 0.86（待确认）：「第四节 膝部254」↔「动脉」",
+        "decisionId": "decision_00261",
+        "confidence": 0.865
       },
       {
         "id": "第七节 | 细菌感染性腹泻",
@@ -2018,18 +1780,18 @@
         "confidence": 0.898
       },
       {
-        "id": "第三节 结肠上区102",
-        "name": "第三节 结肠上区102",
+        "id": "第十一章 消化系统疾病",
+        "name": "第十一章 消化系统疾病",
         "val": 9,
         "type": "merged",
-        "source": "01",
+        "source": "05",
         "books": [
-          "01 局部解剖学"
+          "05 病理学"
         ],
-        "essence": "语义相似度 0.83（待确认）：「第三节 结肠上区102」↔「静脉」",
-        "reasoning": "语义相似度 0.83（待确认）：「第三节 结肠上区102」↔「静脉」",
-        "decisionId": "decision_00299",
-        "confidence": 0.827
+        "essence": "语义相似度 0.72（待确认）：「第十一章 消化系统疾病」↔「主要」",
+        "reasoning": "语义相似度 0.72（待确认）：「第十一章 消化系统疾病」↔「主要」",
+        "decisionId": "decision_02369",
+        "confidence": 0.724
       },
       {
         "id": "第七节 | 聚合酶链反应技术",
@@ -2060,46 +1822,144 @@
         "confidence": null
       },
       {
-        "id": "第三节 颈前区43",
-        "name": "第三节 颈前区43",
+        "id": "第二十二章其他细菌",
+        "name": "第二十二章其他细菌",
         "val": 9,
         "type": "single",
-        "source": "01",
+        "source": "04",
         "books": [
-          "01 局部解剖学"
+          "04 医学微生物学"
         ],
-        "essence": "第三节 颈前区43 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "essence": "第二十二章其他细菌 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
         "reasoning": "由单本图谱与跨教材合并结果生成。",
         "decisionId": null,
         "confidence": null
       },
       {
-        "id": "第一节 概述63",
-        "name": "第一节 概述63",
-        "val": 9,
-        "type": "merged",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "语义相似度 0.77（待确认）：「第一节 概述63」↔「概述」",
-        "reasoning": "语义相似度 0.77（待确认）：「第一节 概述63」↔「概述」",
-        "decisionId": "decision_00120",
-        "confidence": 0.769
-      },
-      {
-        "id": "第七节 | 酒精性肝病和非酒精性脂肪性肝病",
-        "name": "第七节 | 酒精性肝病和非酒精性脂肪性肝病",
+        "id": "第六节 | 心瓣膜病",
+        "name": "第六节 | 心瓣膜病",
         "val": 9,
         "type": "merged",
         "source": "05",
         "books": [
           "05 病理学"
         ],
-        "essence": "语义相似度 0.91：「第七节 | 酒精性肝病和非酒精性脂肪性肝病」↔「主要」",
-        "reasoning": "语义相似度 0.91：「第七节 | 酒精性肝病和非酒精性脂肪性肝病」↔「主要」",
-        "decisionId": "decision_02379",
-        "confidence": 0.908
+        "essence": "语义相似度 0.84（待确认）：「第六节 | 心瓣膜病」↔「主要」",
+        "reasoning": "语义相似度 0.84（待确认）：「第六节 | 心瓣膜病」↔「主要」",
+        "decisionId": "decision_02268",
+        "confidence": 0.837
+      },
+      {
+        "id": "第七节 | 水痘和带状疱疹",
+        "name": "第七节 | 水痘和带状疱疹",
+        "val": 9,
+        "type": "merged",
+        "source": "06",
+        "books": [
+          "06 传染病学"
+        ],
+        "essence": "语义相似度 0.89：「第七节 | 水痘和带状疱疹」↔「主要」",
+        "reasoning": "语义相似度 0.89：「第七节 | 水痘和带状疱疹」↔「主要」",
+        "decisionId": "decision_02743",
+        "confidence": 0.892
+      },
+      {
+        "id": "第五节 | 感染性心内膜炎",
+        "name": "第五节 | 感染性心内膜炎",
+        "val": 9,
+        "type": "merged",
+        "source": "05",
+        "books": [
+          "05 病理学"
+        ],
+        "essence": "语义相似度 0.86（待确认）：「第五节 | 感染性心内膜炎」↔「主要」",
+        "reasoning": "语义相似度 0.86（待确认）：「第五节 | 感染性心内膜炎」↔「主要」",
+        "decisionId": "decision_02264",
+        "confidence": 0.862
+      },
+      {
+        "id": "第四节 肘部217",
+        "name": "第四节 肘部217",
+        "val": 9,
+        "type": "merged",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "语义相似度 0.85（待确认）：「第四节 肘部217」↔「动脉」",
+        "reasoning": "语义相似度 0.85（待确认）：「第四节 肘部217」↔「动脉」",
+        "decisionId": "decision_00102",
+        "confidence": 0.849
+      },
+      {
+        "id": "第十一节 | 胰腺炎",
+        "name": "第十一节 | 胰腺炎",
+        "val": 9,
+        "type": "single",
+        "source": "05",
+        "books": [
+          "05 病理学"
+        ],
+        "essence": "第十一节 | 胰腺炎 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第一节 概述154",
+        "name": "第一节 概述154",
+        "val": 9,
+        "type": "merged",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "语义相似度 0.72（待确认）：「第一节 概述154」↔「概述」",
+        "reasoning": "语义相似度 0.72（待确认）：「第一节 概述154」↔「概述」",
+        "decisionId": "decision_00212",
+        "confidence": 0.723
+      },
+      {
+        "id": "第三节 衰老对机体的影响47",
+        "name": "第三节 衰老对机体的影响47",
+        "val": 9,
+        "type": "single",
+        "source": "07",
+        "books": [
+          "07 病理生理学"
+        ],
+        "essence": "第三节 衰老对机体的影响47 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第八节 | 常见肿瘤举例",
+        "name": "第八节 | 常见肿瘤举例",
+        "val": 9,
+        "type": "merged",
+        "source": "05",
+        "books": [
+          "05 病理学"
+        ],
+        "essence": "语义相似度 0.84（待确认）：「第八节 | 常见肿瘤举例」↔「肿瘤」",
+        "reasoning": "语义相似度 0.84（待确认）：「第八节 | 常见肿瘤举例」↔「肿瘤」",
+        "decisionId": "decision_02344",
+        "confidence": 0.84
+      },
+      {
+        "id": "第五节 | 功能代谢变化的病理生理学基础",
+        "name": "第五节 | 功能代谢变化的病理生理学基础",
+        "val": 9,
+        "type": "single",
+        "source": "07",
+        "books": [
+          "07 病理生理学"
+        ],
+        "essence": "第五节 | 功能代谢变化的病理生理学基础 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
       },
       {
         "id": "第四节 | 风湿病",
@@ -2116,32 +1976,200 @@
         "confidence": 0.799
       },
       {
-        "id": "第六章 肿瘤",
-        "name": "第六章 肿瘤",
+        "id": "第一节 | 食管的炎症、狭窄与扩张",
+        "name": "第一节 | 食管的炎症、狭窄与扩张",
+        "val": 9,
+        "type": "merged",
+        "source": "05",
+        "books": [
+          "05 病理学"
+        ],
+        "essence": "语义相似度 0.87（待确认）：「第一节 | 食管的炎症、狭窄与扩张」↔「病因」",
+        "reasoning": "语义相似度 0.87（待确认）：「第一节 | 食管的炎症、狭窄与扩张」↔「病因」",
+        "decisionId": "decision_02375",
+        "confidence": 0.868
+      },
+      {
+        "id": "第三节 机体的代偿反应183",
+        "name": "第三节 机体的代偿反应183",
+        "val": 9,
+        "type": "single",
+        "source": "07",
+        "books": [
+          "07 病理生理学"
+        ],
+        "essence": "第三节 机体的代偿反应183 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第五节 | 会阴解剖操作",
+        "name": "第五节 | 会阴解剖操作",
+        "val": 9,
+        "type": "merged",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "语义相似度 0.84（待确认）：「第五节 | 会阴解剖操作」↔「阴茎」",
+        "reasoning": "语义相似度 0.84（待确认）：「第五节 | 会阴解剖操作」↔「阴茎」",
+        "decisionId": "decision_00231",
+        "confidence": 0.842
+      },
+      {
+        "id": "第二节 | 克里米亚 - 刚果出血热病毒",
+        "name": "第二节 | 克里米亚 - 刚果出血热病毒",
+        "val": 9,
+        "type": "merged",
+        "source": "04",
+        "books": [
+          "04 医学微生物学"
+        ],
+        "essence": "语义相似度 0.87（待确认）：「第二节 | 克里米亚 - 刚果出血热病毒」↔「命名」",
+        "reasoning": "语义相似度 0.87（待确认）：「第二节 | 克里米亚 - 刚果出血热病毒」↔「命名」",
+        "decisionId": "decision_01373",
+        "confidence": 0.87
+      },
+      {
+        "id": "第六节 纵隔75",
+        "name": "第六节 纵隔75",
+        "val": 9,
+        "type": "merged",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "语义相似度 0.75（待确认）：「第六节 纵隔75」↔「淋巴」",
+        "reasoning": "语义相似度 0.75（待确认）：「第六节 纵隔75」↔「淋巴」",
+        "decisionId": "decision_00133",
+        "confidence": 0.753
+      },
+      {
+        "id": "第五节 前臂部219",
+        "name": "第五节 前臂部219",
+        "val": 9,
+        "type": "single",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "第五节 前臂部219 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第二节 | 腹前外侧壁",
+        "name": "第二节 | 腹前外侧壁",
+        "val": 9,
+        "type": "merged",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "语义相似度 0.80（待确认）：「第二节 | 腹前外侧壁」↔「疏松结缔组织」",
+        "reasoning": "语义相似度 0.80（待确认）：「第二节 | 腹前外侧壁」↔「疏松结缔组织」",
+        "decisionId": "decision_00323",
+        "confidence": 0.799
+      },
+      {
+        "id": "第十三节 | 转录组测序技术",
+        "name": "第十三节 | 转录组测序技术",
+        "val": 9,
+        "type": "merged",
+        "source": "05",
+        "books": [
+          "05 病理学"
+        ],
+        "essence": "语义相似度 0.82（待确认）：「第十三节 | 转录组测序技术」↔「分化」",
+        "reasoning": "语义相似度 0.82（待确认）：「第十三节 | 转录组测序技术」↔「分化」",
+        "decisionId": "decision_02474",
+        "confidence": 0.816
+      },
+      {
+        "id": "第一节 | 病因和诱因",
+        "name": "第一节 | 病因和诱因",
+        "val": 9,
+        "type": "single",
+        "source": "07",
+        "books": [
+          "07 病理生理学"
+        ],
+        "essence": "第一节 | 病因和诱因 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第三节 颈前区43",
+        "name": "第三节 颈前区43",
+        "val": 9,
+        "type": "single",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "第三节 颈前区43 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第四节 盆部解剖操作179",
+        "name": "第四节 盆部解剖操作179",
+        "val": 8,
+        "type": "merged",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "语义相似度 0.85（待确认）：「第四节 盆部解剖操作179」↔「淋巴」",
+        "reasoning": "语义相似度 0.85（待确认）：「第四节 盆部解剖操作179」↔「淋巴」",
+        "decisionId": "decision_00224",
+        "confidence": 0.854
+      },
+      {
+        "id": "第四节 | 盆部解剖操作",
+        "name": "第四节 | 盆部解剖操作",
+        "val": 8,
+        "type": "merged",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "语义相似度 0.85（待确认）：「第四节 | 盆部解剖操作」↔「淋巴」",
+        "reasoning": "语义相似度 0.85（待确认）：「第四节 | 盆部解剖操作」↔「淋巴」",
+        "decisionId": "decision_00239",
+        "confidence": 0.85
+      },
+      {
+        "id": "第四节 | 发生发展机制",
+        "name": "第四节 | 发生发展机制",
+        "val": 8,
+        "type": "single",
+        "source": "07",
+        "books": [
+          "07 病理生理学"
+        ],
+        "essence": "第四节 | 发生发展机制 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第十九章 病理学诊断与研究技术",
+        "name": "第十九章 病理学诊断与研究技术",
         "val": 8,
         "type": "merged",
         "source": "05",
         "books": [
           "05 病理学"
         ],
-        "essence": "语义相似度 0.78（待确认）：「第六章 肿瘤」↔「不仅」",
-        "reasoning": "语义相似度 0.78（待确认）：「第六章 肿瘤」↔「不仅」",
-        "decisionId": "decision_02316",
-        "confidence": 0.78
-      },
-      {
-        "id": "第四节 | 冠状病毒感染",
-        "name": "第四节 | 冠状病毒感染",
-        "val": 8,
-        "type": "merged",
-        "source": "06",
-        "books": [
-          "06 传染病学"
-        ],
-        "essence": "语义相似度 0.80（待确认）：「第四节 | 冠状病毒感染」↔「主要」",
-        "reasoning": "语义相似度 0.80（待确认）：「第四节 | 冠状病毒感染」↔「主要」",
-        "decisionId": "decision_02771",
-        "confidence": 0.798
+        "essence": "语义相似度 0.75（待确认）：「第十九章 病理学诊断与研究技术」↔「主要」",
+        "reasoning": "语义相似度 0.75（待确认）：「第十九章 病理学诊断与研究技术」↔「主要」",
+        "decisionId": "decision_02438",
+        "confidence": 0.746
       },
       {
         "id": "第四章细胞信号转导与疾病",
@@ -2153,6 +2181,62 @@
           "07 病理生理学"
         ],
         "essence": "第四章细胞信号转导与疾病 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第二节 | 主要致病性支原体",
+        "name": "第二节 | 主要致病性支原体",
+        "val": 8,
+        "type": "merged",
+        "source": "04",
+        "books": [
+          "04 医学微生物学"
+        ],
+        "essence": "语义相似度 0.79（待确认）：「第二节 | 主要致病性支原体」↔「主要」",
+        "reasoning": "语义相似度 0.79（待确认）：「第二节 | 主要致病性支原体」↔「主要」",
+        "decisionId": "decision_02093",
+        "confidence": 0.787
+      },
+      {
+        "id": "第九章 心血管系统疾病",
+        "name": "第九章 心血管系统疾病",
+        "val": 8,
+        "type": "merged",
+        "source": "05",
+        "books": [
+          "05 病理学"
+        ],
+        "essence": "语义相似度 0.71（待确认）：「第九章 心血管系统疾病」↔「健康」",
+        "reasoning": "语义相似度 0.71（待确认）：「第九章 心血管系统疾病」↔「健康」",
+        "decisionId": "decision_02251",
+        "confidence": 0.709
+      },
+      {
+        "id": "第五章 细菌性疾病",
+        "name": "第五章 细菌性疾病",
+        "val": 8,
+        "type": "merged",
+        "source": "06",
+        "books": [
+          "06 传染病学"
+        ],
+        "essence": "语义相似度 0.71（待确认）：「第五章 细菌性疾病」↔「病因」",
+        "reasoning": "语义相似度 0.71（待确认）：「第五章 细菌性疾病」↔「病因」",
+        "decisionId": "decision_02796",
+        "confidence": 0.706
+      },
+      {
+        "id": "第三节 | 膈",
+        "name": "第三节 | 膈",
+        "val": 8,
+        "type": "single",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "第三节 | 膈 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
         "reasoning": "由单本图谱与跨教材合并结果生成。",
         "decisionId": null,
         "confidence": null
@@ -2172,130 +2256,46 @@
         "confidence": 0.839
       },
       {
-        "id": "第十九章 病理学诊断与研究技术",
-        "name": "第十九章 病理学诊断与研究技术",
-        "val": 8,
-        "type": "merged",
-        "source": "05",
-        "books": [
-          "05 病理学"
-        ],
-        "essence": "语义相似度 0.75（待确认）：「第十九章 病理学诊断与研究技术」↔「主要」",
-        "reasoning": "语义相似度 0.75（待确认）：「第十九章 病理学诊断与研究技术」↔「主要」",
-        "decisionId": "decision_02438",
-        "confidence": 0.746
-      },
-      {
-        "id": "第三节 | 膈",
-        "name": "第三节 | 膈",
+        "id": "第十五章 心功能不全",
+        "name": "第十五章 心功能不全",
         "val": 8,
         "type": "single",
-        "source": "01",
+        "source": "07",
         "books": [
-          "01 局部解剖学"
+          "07 病理生理学"
         ],
-        "essence": "第三节 | 膈 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "essence": "第十五章 心功能不全 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
         "reasoning": "由单本图谱与跨教材合并结果生成。",
         "decisionId": null,
         "confidence": null
       },
       {
-        "id": "第四节 | 膝 部",
-        "name": "第四节 | 膝 部",
-        "val": 8,
-        "type": "merged",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "语义相似度 0.81（待确认）：「第四节 | 膝 部」↔「主要」",
-        "reasoning": "语义相似度 0.81（待确认）：「第四节 | 膝 部」↔「主要」",
-        "decisionId": "decision_00272",
-        "confidence": 0.812
-      },
-      {
-        "id": "第四节 | 盆部解剖操作",
-        "name": "第四节 | 盆部解剖操作",
-        "val": 8,
-        "type": "merged",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "语义相似度 0.85（待确认）：「第四节 | 盆部解剖操作」↔「淋巴」",
-        "reasoning": "语义相似度 0.85（待确认）：「第四节 | 盆部解剖操作」↔「淋巴」",
-        "decisionId": "decision_00239",
-        "confidence": 0.85
-      },
-      {
-        "id": "第十节 | 胆囊炎与胆石症",
-        "name": "第十节 | 胆囊炎与胆石症",
-        "val": 8,
-        "type": "merged",
-        "source": "05",
-        "books": [
-          "05 病理学"
-        ],
-        "essence": "语义相似度 0.87（待确认）：「第十节 | 胆囊炎与胆石症」↔「主要」",
-        "reasoning": "语义相似度 0.87（待确认）：「第十节 | 胆囊炎与胆石症」↔「主要」",
-        "decisionId": "decision_02396",
-        "confidence": 0.869
-      },
-      {
-        "id": "第五章 细菌性疾病",
-        "name": "第五章 细菌性疾病",
+        "id": "第四节 | 冠状病毒感染",
+        "name": "第四节 | 冠状病毒感染",
         "val": 8,
         "type": "merged",
         "source": "06",
         "books": [
           "06 传染病学"
         ],
-        "essence": "语义相似度 0.71（待确认）：「第五章 细菌性疾病」↔「病因」",
-        "reasoning": "语义相似度 0.71（待确认）：「第五章 细菌性疾病」↔「病因」",
-        "decisionId": "decision_02796",
-        "confidence": 0.706
+        "essence": "语义相似度 0.80（待确认）：「第四节 | 冠状病毒感染」↔「主要」",
+        "reasoning": "语义相似度 0.80（待确认）：「第四节 | 冠状病毒感染」↔「主要」",
+        "decisionId": "decision_02771",
+        "confidence": 0.798
       },
       {
-        "id": "第一节 概述38",
-        "name": "第一节 概述38",
+        "id": "第六章 肿瘤",
+        "name": "第六章 肿瘤",
         "val": 8,
         "type": "merged",
-        "source": "01",
+        "source": "05",
         "books": [
-          "01 局部解剖学"
+          "05 病理学"
         ],
-        "essence": "语义相似度 0.79（待确认）：「第一节 概述38」↔「概述」",
-        "reasoning": "语义相似度 0.79（待确认）：「第一节 概述38」↔「概述」",
-        "decisionId": "decision_00171",
-        "confidence": 0.787
-      },
-      {
-        "id": "第二节 | 主要致病性支原体",
-        "name": "第二节 | 主要致病性支原体",
-        "val": 8,
-        "type": "merged",
-        "source": "04",
-        "books": [
-          "04 医学微生物学"
-        ],
-        "essence": "语义相似度 0.79（待确认）：「第二节 | 主要致病性支原体」↔「主要」",
-        "reasoning": "语义相似度 0.79（待确认）：「第二节 | 主要致病性支原体」↔「主要」",
-        "decisionId": "decision_02093",
-        "confidence": 0.787
-      },
-      {
-        "id": "第四节 盆部解剖操作179",
-        "name": "第四节 盆部解剖操作179",
-        "val": 8,
-        "type": "merged",
-        "source": "01",
-        "books": [
-          "01 局部解剖学"
-        ],
-        "essence": "语义相似度 0.85（待确认）：「第四节 盆部解剖操作179」↔「淋巴」",
-        "reasoning": "语义相似度 0.85（待确认）：「第四节 盆部解剖操作179」↔「淋巴」",
-        "decisionId": "decision_00224",
-        "confidence": 0.854
+        "essence": "语义相似度 0.78（待确认）：「第六章 肿瘤」↔「不仅」",
+        "reasoning": "语义相似度 0.78（待确认）：「第六章 肿瘤」↔「不仅」",
+        "decisionId": "decision_02316",
+        "confidence": 0.78
       },
       {
         "id": "第三章 病毒性疾病",
@@ -2326,67 +2326,127 @@
         "confidence": 0.765
       },
       {
-        "id": "第十五章 心功能不全",
-        "name": "第十五章 心功能不全",
-        "val": 8,
-        "type": "single",
-        "source": "07",
-        "books": [
-          "07 病理生理学"
-        ],
-        "essence": "第十五章 心功能不全 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
-        "id": "第四节 | 发生发展机制",
-        "name": "第四节 | 发生发展机制",
-        "val": 8,
-        "type": "single",
-        "source": "07",
-        "books": [
-          "07 病理生理学"
-        ],
-        "essence": "第四节 | 发生发展机制 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
-        "id": "第九章 心血管系统疾病",
-        "name": "第九章 心血管系统疾病",
+        "id": "第十节 | 胆囊炎与胆石症",
+        "name": "第十节 | 胆囊炎与胆石症",
         "val": 8,
         "type": "merged",
         "source": "05",
         "books": [
           "05 病理学"
         ],
-        "essence": "语义相似度 0.71（待确认）：「第九章 心血管系统疾病」↔「健康」",
-        "reasoning": "语义相似度 0.71（待确认）：「第九章 心血管系统疾病」↔「健康」",
-        "decisionId": "decision_02251",
-        "confidence": 0.709
+        "essence": "语义相似度 0.87（待确认）：「第十节 | 胆囊炎与胆石症」↔「主要」",
+        "reasoning": "语义相似度 0.87（待确认）：「第十节 | 胆囊炎与胆石症」↔「主要」",
+        "decisionId": "decision_02396",
+        "confidence": 0.869
       },
       {
-        "id": "第二章疾病概论",
-        "name": "第二章疾病概论",
+        "id": "第一节 概述38",
+        "name": "第一节 概述38",
+        "val": 8,
+        "type": "merged",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "语义相似度 0.79（待确认）：「第一节 概述38」↔「概述」",
+        "reasoning": "语义相似度 0.79（待确认）：「第一节 概述38」↔「概述」",
+        "decisionId": "decision_00171",
+        "confidence": 0.787
+      },
+      {
+        "id": "第四节 | 膝 部",
+        "name": "第四节 | 膝 部",
+        "val": 8,
+        "type": "merged",
+        "source": "01",
+        "books": [
+          "01 局部解剖学"
+        ],
+        "essence": "语义相似度 0.81（待确认）：「第四节 | 膝 部」↔「主要」",
+        "reasoning": "语义相似度 0.81（待确认）：「第四节 | 膝 部」↔「主要」",
+        "decisionId": "decision_00272",
+        "confidence": 0.812
+      },
+      {
+        "id": "第一章头部",
+        "name": "第一章头部",
+        "val": 7,
+        "type": "merged",
+        "source": "global",
+        "books": [],
+        "essence": "语义相似度 0.70（待确认）：「第一章头部」↔「病理学」",
+        "reasoning": "语义相似度 0.70（待确认）：「第一章头部」↔「病理学」",
+        "decisionId": "decision_00075",
+        "confidence": 0.701
+      },
+      {
+        "id": "第十八章传染病",
+        "name": "第十八章传染病",
         "val": 7,
         "type": "single",
         "source": "global",
         "books": [],
-        "essence": "第二章疾病概论 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "essence": "第十八章传染病 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
         "reasoning": "由单本图谱与跨教材合并结果生成。",
         "decisionId": null,
         "confidence": null
       },
       {
-        "id": "第二十章多器官功能障碍",
-        "name": "第二十章多器官功能障碍",
+        "id": "第十章呼吸系统疾病",
+        "name": "第十章呼吸系统疾病",
+        "val": 7,
+        "type": "merged",
+        "source": "global",
+        "books": [],
+        "essence": "语义相似度 0.77（待确认）：「第十章呼吸系统疾病」↔「主要」",
+        "reasoning": "语义相似度 0.77（待确认）：「第十章呼吸系统疾病」↔「主要」",
+        "decisionId": "decision_02591",
+        "confidence": 0.766
+      },
+      {
+        "id": "第十三章休克",
+        "name": "第十三章休克",
         "val": 7,
         "type": "single",
         "source": "global",
         "books": [],
-        "essence": "第二十章多器官功能障碍 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "essence": "第十三章休克 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第六章应激",
+        "name": "第六章应激",
+        "val": 7,
+        "type": "single",
+        "source": "global",
+        "books": [],
+        "essence": "第六章应激 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第八章酸碱平衡紊乱",
+        "name": "第八章酸碱平衡紊乱",
+        "val": 7,
+        "type": "single",
+        "source": "global",
+        "books": [],
+        "essence": "第八章酸碱平衡紊乱 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第十八章肾功能不全",
+        "name": "第十八章肾功能不全",
+        "val": 7,
+        "type": "single",
+        "source": "global",
+        "books": [],
+        "essence": "第十八章肾功能不全 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
         "reasoning": "由单本图谱与跨教材合并结果生成。",
         "decisionId": null,
         "confidence": null
@@ -2404,66 +2464,6 @@
         "confidence": 0.95
       },
       {
-        "id": "第六章消化和吸收",
-        "name": "第六章消化和吸收",
-        "val": 7,
-        "type": "merged",
-        "source": "global",
-        "books": [],
-        "essence": "语义相似度 0.79（待确认）：「第六章消化和吸收」↔「出现」",
-        "reasoning": "语义相似度 0.79（待确认）：「第六章消化和吸收」↔「出现」",
-        "decisionId": "decision_01143",
-        "confidence": 0.791
-      },
-      {
-        "id": "第六章应激",
-        "name": "第六章应激",
-        "val": 7,
-        "type": "single",
-        "source": "global",
-        "books": [],
-        "essence": "第六章应激 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
-        "id": "第十三章休克",
-        "name": "第十三章休克",
-        "val": 7,
-        "type": "single",
-        "source": "global",
-        "books": [],
-        "essence": "第十三章休克 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
-        "id": "第一章头部",
-        "name": "第一章头部",
-        "val": 7,
-        "type": "merged",
-        "source": "global",
-        "books": [],
-        "essence": "语义相似度 0.70（待确认）：「第一章头部」↔「病理学」",
-        "reasoning": "语义相似度 0.70（待确认）：「第一章头部」↔「病理学」",
-        "decisionId": "decision_00075",
-        "confidence": 0.701
-      },
-      {
-        "id": "第八章酸碱平衡紊乱",
-        "name": "第八章酸碱平衡紊乱",
-        "val": 7,
-        "type": "single",
-        "source": "global",
-        "books": [],
-        "essence": "第八章酸碱平衡紊乱 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
         "id": "第三节 | 血栓形成",
         "name": "第三节 | 血栓形成",
         "val": 7,
@@ -2476,40 +2476,40 @@
         "confidence": 0.95
       },
       {
-        "id": "第十章呼吸系统疾病",
-        "name": "第十章呼吸系统疾病",
+        "id": "第二十章多器官功能障碍",
+        "name": "第二十章多器官功能障碍",
+        "val": 7,
+        "type": "single",
+        "source": "global",
+        "books": [],
+        "essence": "第二十章多器官功能障碍 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第二章疾病概论",
+        "name": "第二章疾病概论",
+        "val": 7,
+        "type": "single",
+        "source": "global",
+        "books": [],
+        "essence": "第二章疾病概论 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "reasoning": "由单本图谱与跨教材合并结果生成。",
+        "decisionId": null,
+        "confidence": null
+      },
+      {
+        "id": "第六章消化和吸收",
+        "name": "第六章消化和吸收",
         "val": 7,
         "type": "merged",
         "source": "global",
         "books": [],
-        "essence": "语义相似度 0.77（待确认）：「第十章呼吸系统疾病」↔「主要」",
-        "reasoning": "语义相似度 0.77（待确认）：「第十章呼吸系统疾病」↔「主要」",
-        "decisionId": "decision_02591",
-        "confidence": 0.766
-      },
-      {
-        "id": "第十八章传染病",
-        "name": "第十八章传染病",
-        "val": 7,
-        "type": "single",
-        "source": "global",
-        "books": [],
-        "essence": "第十八章传染病 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
-      },
-      {
-        "id": "第十章 其他感染相关问题",
-        "name": "第十章 其他感染相关问题",
-        "val": 7,
-        "type": "single",
-        "source": "global",
-        "books": [],
-        "essence": "第十章 其他感染相关问题 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
-        "reasoning": "由单本图谱与跨教材合并结果生成。",
-        "decisionId": null,
-        "confidence": null
+        "essence": "语义相似度 0.79（待确认）：「第六章消化和吸收」↔「出现」",
+        "reasoning": "语义相似度 0.79（待确认）：「第六章消化和吸收」↔「出现」",
+        "decisionId": "decision_01143",
+        "confidence": 0.791
       },
       {
         "id": "第一章绪论",
@@ -2524,13 +2524,13 @@
         "confidence": 0.95
       },
       {
-        "id": "第十八章肾功能不全",
-        "name": "第十八章肾功能不全",
+        "id": "第十章 其他感染相关问题",
+        "name": "第十章 其他感染相关问题",
         "val": 7,
         "type": "single",
         "source": "global",
         "books": [],
-        "essence": "第十八章肾功能不全 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
+        "essence": "第十章 其他感染相关问题 是整合图谱中的知识节点，可继续查看其邻接关系与来源教材。",
         "reasoning": "由单本图谱与跨教材合并结果生成。",
         "decisionId": null,
         "confidence": null
@@ -5068,7 +5068,7 @@
     "originalChars": 1301865,
     "compressedChars": 274873,
     "compressionRatio": 0.21113786759763878,
-    "rawCompressionRatio": 0.8234962918582188,
+    "rawCompressionRatio": 0.2048806903941653,
     "targetMet": true,
     "tierDistribution": {
       "1": 427,
