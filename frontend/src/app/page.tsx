@@ -52,6 +52,7 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState<'node' | 'rag' | 'report'>('node');
   const [ragInput, setRagInput] = useState('');
   const [ragChat, setRagChat] = useState<{role: 'user'|'agent', content: string, citations?: string[]}[]>([]);
+  const [ragLoading, setRagLoading] = useState(false);
 
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [isDragging, setIsDragging] = useState(false);
