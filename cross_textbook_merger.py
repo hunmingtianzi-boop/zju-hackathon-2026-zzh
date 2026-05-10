@@ -187,20 +187,15 @@ class LLMBinaryClassifier:
 
         return is_same, rationale, confidence
 
-    def _ollama(self, prompt: str, timeout: int = 60) -> str:
-        import subprocess
-        try:
-            result = subprocess.run(
-                ['ollama', 'run', self.model, prompt],
-                capture_output=True, text=True, timeout=timeout,
-                encoding='utf-8', errors='replace',
-            )
-            self._call_count += 1
-            if result.returncode == 0:
-                return result.stdout.strip()
-        except Exception:
-            pass
-        return ""
+    def _llm_classify(self, prompt: str) -> str:
+        from llm_client import chat
+        self._call_count += 1
+        result = chat(prompt, system="你是专业医学知识审核员。请只回答YES或NO。", temperature=0.1)
+        if result:
+            print(f"  [LLM-Classify] call #{self._call_count} ok ({len(result)} chars)")
+        else:
+            print(f"  [LLM-Classify] call #{self._call_count} FAILED")
+        return result
 
 
 class CrossTextbookMerger:
