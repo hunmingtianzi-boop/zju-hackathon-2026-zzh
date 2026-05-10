@@ -1,18 +1,11 @@
 import { NextResponse } from 'next/server';
-import { spawn } from 'child_process';
-import path from 'path';
 
-const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://127.0.0.1:8000';
-
-interface RagRequest {
-  question: string;
-  top_k?: number;
-}
+// Pre-load agent data for in-memory search
+import agentDataRaw from '@/lib/agentData.json';
 
 interface Citation {
   source: string;
   chapter: string;
-  page: string;
   snippet: string;
   score: number;
 }
@@ -22,105 +15,105 @@ interface RagResponse {
   answer: string;
   citations: Citation[];
   total_chunks_searched: number;
+  method: 'llm' | 'local';
 }
 
-async function callPythonRag(question: string, topK: number): Promise<RagResponse> {
-  return new Promise((resolve, reject) => {
-    const scriptPath = path.join(process.cwd(), '..', 'rag_query.py');
-    const args = [scriptPath, question, '--top-k', String(topK)];
+function kgSearch(question: string, topK: number): Citation[] {
+  const nodes = (agentDataRaw as any).graph?.nodes || [];
+  const results: { node: any; score: number }[] = [];
 
-    const proc = spawn('python', args, {
-      cwd: path.join(process.cwd(), '..'),
-      env: { ...process.env, PYTHONIOENCODING: 'utf-8' },
-    });
+  for (const node of nodes) {
+    const haystack = `${node.name || ''} ${node.essence || ''} ${node.reasoning || ''} ${(node.books || []).join(' ')}`.toLowerCase();
+    const q = question.toLowerCase();
+    let score = 0;
+    if (node.name?.includes(q)) score += 4;
+    if (haystack.includes(q)) score += 1;
+    const charOverlap = [...q].filter(c => haystack.includes(c)).length / Math.max(q.length, 1);
+    score += charOverlap * 2;
+    if (score > 0) results.push({ node, score });
+  }
 
-    let stdout = '';
-    let stderr = '';
+  results.sort((a, b) => b.score - a.score);
 
-    proc.stdout.on('data', (data: Buffer) => {
-      stdout += data.toString('utf-8');
-    });
-
-    proc.stderr.on('data', (data: Buffer) => {
-      stderr += data.toString('utf-8');
-    });
-
-    proc.on('close', (code: number) => {
-      if (code === 0) {
-        try {
-          const result = JSON.parse(stdout) as RagResponse;
-          resolve(result);
-        } catch {
-          reject(new Error(`Failed to parse RAG output: ${stdout.slice(0, 200)}`));
-        }
-      } else {
-        reject(new Error(`RAG subprocess exited ${code}: ${stderr.slice(0, 300)}`));
-      }
-    });
-
-    proc.on('error', (err: Error) => {
-      reject(new Error(`Failed to spawn RAG subprocess: ${err.message}`));
-    });
-
-    // Timeout after 60s
-    const timer = setTimeout(() => {
-      proc.kill();
-      reject(new Error('RAG subprocess timed out after 60s'));
-    }, 60000);
-
-    proc.on('close', () => clearTimeout(timer));
-  });
+  return results.slice(0, topK).map(r => ({
+    source: (r.node.books || ['整合图谱']).join(' / '),
+    chapter: r.node.name || '',
+    snippet: r.node.essence || r.node.reasoning || '',
+    score: Math.min(r.score / 8, 1),
+  }));
 }
 
-function fallbackResponse(question: string): RagResponse {
-  return {
-    question,
-    answer: `针对「${question}」，当前 RAG 检索引擎离线或索引文件未就绪。请先运行 python search_engine.py 构建索引，或检查 medical_index_faiss.index 是否存在。`,
-    citations: [],
-    total_chunks_searched: 0,
-  };
+function localAnswer(question: string, citations: Citation[]): string {
+  if (!citations.length) {
+    return `针对「${question}」，当前知识图谱中未找到直接匹配的知识点。建议尝试更具体的医学概念，或在本地运行 python search_engine.py 做全库检索。`;
+  }
+  const top = citations.slice(0, 3).map((c, i) =>
+    `[${i + 1}] ${c.source} · ${c.chapter}\n   ${c.snippet?.slice(0, 150)}`
+  ).join('\n\n');
+  return `围绕「${question}」，图谱定位到 ${citations.length} 个关联知识点：\n\n${top}\n\n（注：当前为图谱检索结果。接入 LLM API 后可生成自然语言回答。）`;
+}
+
+async function llmAnswer(question: string, citations: Citation[]): Promise<string | null> {
+  const apiKey = process.env.DEEPSEEK_API_KEY;
+  if (!apiKey || !citations.length) return null;
+
+  const context = citations.slice(0, 5).map((c, i) =>
+    `[${i + 1}] 来源：${c.source}，${c.chapter}\n内容：${c.snippet?.slice(0, 300)}`
+  ).join('\n\n');
+
+  const prompt = `你是一位医学教学助手。根据以下教材知识点回答用户问题。\n规则：1) 只基于提供的知识点回答，不要编造；2) 引用时标注来源编号如 [1][2]；3) 如果不足以回答，明确说明。\n\n## 知识点\n${context}\n\n## 用户问题\n${question}\n\n请回答：`;
+
+  try {
+    const res = await fetch('https://api.deepseek.com/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${apiKey}`,
+      },
+      body: JSON.stringify({
+        model: 'deepseek-chat',
+        messages: [
+          { role: 'system', content: '你是专业医学教学助手。请用中文回答。' },
+          { role: 'user', content: prompt },
+        ],
+        temperature: 0.3,
+        max_tokens: 1024,
+        stream: false,
+      }),
+      signal: AbortSignal.timeout(15000),
+    });
+
+    if (!res.ok) return null;
+    const data = await res.json();
+    return data.choices?.[0]?.message?.content || null;
+  } catch {
+    return null;
+  }
 }
 
 export async function POST(request: Request) {
   try {
-    const body: RagRequest = await request.json();
-    const { question, top_k = 5 } = body;
+    const { question, top_k = 5 } = await request.json();
 
     if (!question || question.trim().length === 0) {
-      return NextResponse.json(
-        { success: false, message: 'Question is required' },
-        { status: 400 }
-      );
+      return NextResponse.json({ success: false, message: 'Question is required' }, { status: 400 });
     }
 
-    // Try remote backend first
-    try {
-      const res = await fetch(`${BACKEND_URL}/api/rag`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ question, top_k }),
-        signal: AbortSignal.timeout(5000),
-      });
-      if (res.ok) {
-        return NextResponse.json(await res.json());
-      }
-    } catch {
-      console.warn('Backend /api/rag not reachable, using local Python subprocess.');
-    }
+    const citations = kgSearch(question.trim(), top_k);
 
-    // Fallback: spawn local Python rag_query.py
-    try {
-      const result = await callPythonRag(question.trim(), top_k);
-      return NextResponse.json(result);
-    } catch (pythonError) {
-      console.error('Python RAG subprocess failed:', pythonError);
-      return NextResponse.json(fallbackResponse(question.trim()));
-    }
+    // Try LLM generation, fallback to local
+    const llmResult = await llmAnswer(question.trim(), citations);
+    const answer = llmResult || localAnswer(question.trim(), citations);
+
+    return NextResponse.json({
+      question: question.trim(),
+      answer,
+      citations,
+      total_chunks_searched: (agentDataRaw as any).graph?.nodes?.length || 0,
+      method: llmResult ? 'llm' : 'local',
+    } as RagResponse);
   } catch (error) {
     console.error('RAG API Error:', error);
-    return NextResponse.json(
-      { success: false, message: 'Internal server error' },
-      { status: 500 }
-    );
+    return NextResponse.json({ success: false, message: 'Internal server error' }, { status: 500 });
   }
 }
