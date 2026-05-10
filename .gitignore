@@ -1,0 +1,22 @@
+# Large files
+textbooks/
+*.pdf
+*.zip
+*.7z
+*.rar
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+
+# Obsidian
+.obsidian/
+
+# OS files
+.DS_Store
+Thumbs.db
