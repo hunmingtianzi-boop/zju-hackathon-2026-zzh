@@ -1,0 +1,26 @@
+{
+  "description": "LLM few-shot triple extraction sample (3 triples from 00_绪论_00_开篇.md)",
+  "prompt_type": "few-shot",
+  "model": "deepseek-chat",
+  "source_chunk": "00_绪论_00_开篇.md",
+  "triples": [
+    {
+      "subject": "新形态教材",
+      "relation": "containment",
+      "object": "数字资源",
+      "evidence": "新形态教材是充分利用多种形式的数字资源及现代信息技术，通过二维码将纸书内容与数字资源进行深度融合的教材。"
+    },
+    {
+      "subject": "新形态教材",
+      "relation": "application",
+      "object": "二维码",
+      "evidence": "通过二维码将纸书内容与数字资源进行深度融合"
+    },
+    {
+      "subject": "电子教材",
+      "relation": "parallel",
+      "object": "纸质教材",
+      "evidence": "电子教材是纸质教材的电子阅读版本，其内容及排版与纸质教材保持一致"
+    }
+  ]
+}
